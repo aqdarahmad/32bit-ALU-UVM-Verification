@@ -1,9 +1,8 @@
 
 // alu_scoreboard.sv
-// Lab 6 - Scoreboard Component
-// 
-// Scoreboard: Receives transactions from monitor, computes expected results,
-// compares with actual results, and reports PASS/FAIL status
+// UVM Scoreboard for ALU DUT
+// Contains reference model and checks DUT output against expected results
+
 
 
 class alu_scoreboard extends uvm_scoreboard;

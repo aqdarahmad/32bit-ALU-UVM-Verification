@@ -1,12 +1,9 @@
 
+
+
 // alu_agent.sv
-// Lab 4 - Agent Component
-// 
-// Agent: Modular component that manages interaction between testbench and DUT.
-// Contains driver, monitor, and sequencer.
-// Can operate in ACTIVE mode (drives transactions) or PASSIVE mode (monitors only)
-
-
+// UVM Agent for ALU DUT
+// Contains Driver, Sequencer, and Monitor components
 class alu_agent extends uvm_agent;
   
 
@@ -51,7 +48,8 @@ class alu_agent extends uvm_agent;
   function void connect_phase(uvm_phase phase);
     super.connect_phase(phase);
     
-    // Connect driver to sequencer (only in active mode)
+  // 
+  // Connect driver to sequencer if in ACTIVE mode
     if(get_is_active() == UVM_ACTIVE) begin
       driver.seq_item_port.connect(sequencer.seq_item_export);
     end

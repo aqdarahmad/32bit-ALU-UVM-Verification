@@ -1,5 +1,6 @@
-//Lab3 
-//Monitor : watch DUT signals and captures what is happening , and sends these observations to scoreboared for checking ,it never drives signals only reads
+// alu_monitor.sv
+// UVM Monitor for ALU DUT
+// Observes DUT signals and sends transactions to scoreboard and subscriber
 
 class alu_monitor extends uvm_monitor;
   
