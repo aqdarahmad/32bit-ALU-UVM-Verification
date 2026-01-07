@@ -77,3 +77,5 @@ WARNING: Illegal reflective access by com.cadence.ufi.gui.views.ui.InnerContentT
 WARNING: Please consider reporting this to the maintainers of com.cadence.ufi.gui.views.ui.InnerContentTabbedPaneUI
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
+*** shutting down gRPC server since JVM is shutting down
+*** server shut down

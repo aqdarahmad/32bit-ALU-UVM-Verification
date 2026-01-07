@@ -43,3 +43,6 @@
 	source = designTopsTreeTable
 	entity = top
 
+20:52:50:5250 [user_actions] [AWT-EventQueue-1] DEBUG - OK (GUFIQuestionDialog$1)
+	dialog = confirmExitDlg (GUFIQuestionDialog)
+

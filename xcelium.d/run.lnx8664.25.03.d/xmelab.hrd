@@ -2,5 +2,9 @@
 // File created by:  xrun
 // Do not modify this file
 //
--LWDGEN
--DISABLE_XFORM
+-ACCESS
++rwc
+-timescale
+1ns/1ps
+-COVERAGE
+all

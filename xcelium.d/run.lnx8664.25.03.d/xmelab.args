@@ -2,10 +2,12 @@
 // File created by:  xrun
 // Do not modify this file
 //
--loadpli
-/usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmpli.so:uvm_pli_boot
--LWDGEN
--DISABLE_XFORM
+-ACCESS
++rwc
+-timescale
+1ns/1ps
+-COVERAGE
+all
 -no_analogsolver
 -MESSAGES
 -dms_perf
