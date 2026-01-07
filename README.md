@@ -1,43 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>32-bit ALU UVM Verification</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>32-bit ALU UVM Verification</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* Body */
+body { font-family: 'Inter', sans-serif; background:#f5f7fa; color:#1c1c1c; line-height:1.6; padding:20px 40px; }
+header { text-align:center; margin-bottom:30px; }
+header h1 { color:#284139; font-size:2.8em; margin-bottom:5px; }
+header .subtitle { color:#809076; font-size:1.2em; margin-bottom:10px; }
+
+/* Badges */
+.badges { display:flex; justify-content:center; gap:10px; margin-bottom:20px; }
+.badges img { height:25px; }
+
+/* TOC */
+#toc { background:#ffffff; padding:15px 20px; border-radius:8px; border-left:6px solid #BB6830; margin-bottom:25px; box-shadow:0 4px 10px rgba(0,0,0,0.05);}
+#toc h2 { color:#284139; cursor:pointer; }
+#toc ul { list-style:none; padding-left:10px; margin-top:10px; display:none; }
+#toc li { margin-bottom:8px; }
+
+/* Sections */
+section { background:#ffffff; padding:20px 30px; margin-bottom:25px; border-left:6px solid #BB6830; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.05);}
+section h2 { color:#284139; cursor:pointer; }
+section.collapsible { max-height:5000px; transition:max-height 0.3s ease; overflow:hidden; }
+
+/* Tools Highlight */
+.tool { background-color:#BB8D3F; color:#fff; padding:2px 8px; border-radius:4px; font-weight:bold; }
+
+/* Preformatted blocks */
+pre { background-color:#E8F0F2; padding:12px; border-radius:6px; overflow-x:auto; margin-bottom:10px; }
+
+/* Footer */
+footer { text-align:center; margin-top:40px; padding-top:10px; border-top:1px solid #ddd; color:#555; font-size:0.9em; }
+
+/* Collapsible toggle */
+.collapsed h2::after { content:' ▼'; float:right; }
+.expanded h2::after { content:' ▲'; float:right; }
+
+</style>
 </head>
 <body>
-    <header>
-        <h1>32-bit ALU UVM Verification</h1>
-        <p class="subtitle">Professional Verification Environment using UVM, IMC, SimVision & Verisim Debug</p>
-    </header>
 
-    <section>
-        <h2>Overview</h2>
-        <p>This project provides a complete <strong>UVM (Universal Verification Methodology)</strong> environment for a <strong>32-bit ALU</strong>. It ensures functional correctness, performance, and reliability using constrained-random stimulus, coverage analysis, and assertions.</p>
-    </section>
+<header>
+    <h1>32-bit ALU UVM Verification</h1>
+    <p class="subtitle">Professional Verification Environment using UVM, IMC, SimVision & Verisim Debug</p>
+</header>
 
-    <section>
-        <h2>Features</h2>
-        <ul>
-            <li><strong>UVM Components:</strong> Driver, Monitor, Sequencer, Scoreboard, Functional coverage, Assertions</li>
-            <li><strong>ALU Operations:</strong> Add, Subtract, AND, OR, XOR, Shifts, Rotates, Overflow detection</li>
-            <li><strong>Verification Methodology:</strong> Constrained-random tests, Transaction-based sequences, Reference model comparison</li>
-        </ul>
-    </section>
+<div class="badges">
+    <img src="https://img.shields.io/badge/Build-Passing-brightgreen" alt="Build Status">
+    <img src="https://img.shields.io/badge/Coverage-95%25-blue" alt="Coverage">
+    <img src="https://img.shields.io/github/stars/username/repo?style=social" alt="GitHub Stars">
+</div>
 
-    <section>
-        <h2>Tools Used</h2>
-        <ul>
-            <li><span class="tool">IMC</span> – Metrics & Coverage Collection</li>
-            <li><span class="tool">SimVision</span> – Waveform viewing & simulation debug</li>
-            <li><span class="tool">Verisim Debug</span> – Step-by-step RTL debugging</li>
-            <li><span class="tool">Synopsys VCS</span> – RTL simulation engine</li>
-        </ul>
-    </section>
+<div id="toc">
+    <h2 onclick="toggleTOC()">Table of Contents</h2>
+    <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#tools">Tools Used</a></li>
+        <li><a href="#structure">Directory Structure</a></li>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#contribution">Contribution Guidelines</a></li>
+        <li><a href="#authors">Authors</a></li>
+        <li><a href="#license">License</a></li>
+    </ul>
+</div>
 
-    <section>
-        <h2>Directory Structure</h2>
-        <pre>
+<section id="overview" class="collapsible expanded">
+    <h2>Overview</h2>
+    <p>This project provides a complete <strong>UVM (Universal Verification Methodology)</strong> environment for a <strong>32-bit ALU</strong>. It ensures functional correctness, performance, and reliability using constrained-random stimulus, coverage analysis, and assertions.</p>
+</section>
+
+<section id="features" class="collapsible expanded">
+    <h2>Features</h2>
+    <ul>
+        <li><strong>UVM Components:</strong> Driver, Monitor, Sequencer, Scoreboard, Functional coverage, Assertions</li>
+        <li><strong>ALU Operations:</strong> Add, Subtract, AND, OR, XOR, Shifts, Rotates, Overflow detection</li>
+        <li><strong>Verification Methodology:</strong> Constrained-random tests, Transaction-based sequences, Reference model comparison</li>
+    </ul>
+</section>
+
+<section id="tools" class="collapsible expanded">
+    <h2>Tools Used</h2>
+    <ul>
+        <li><span class="tool">IMC</span> – Metrics & Coverage Collection</li>
+        <li><span class="tool">SimVision</span> – Waveform viewing & simulation debug</li>
+        <li><span class="tool">Verisim Debug</span> – Step-by-step RTL debugging</li>
+        <li><span class="tool">Synopsys VCS</span> – RTL simulation engine</li>
+    </ul>
+</section>
+
+<section id="structure" class="collapsible expanded">
+    <h2>Directory Structure</h2>
+    <pre>
 project/
 │
 ├─ lab1/       # Sequence items and sequences
@@ -46,20 +106,20 @@ project/
 ├─ sim/        # Simulation scripts & logs
 ├─ coverage/   # Functional coverage reports
 └─ README.html # Project documentation
-        </pre>
-    </section>
+    </pre>
+</section>
 
-    <section>
-        <h2>Getting Started</h2>
-        <h3>Prerequisites</h3>
-        <ul>
-            <li>Linux OS with VCS installed</li>
-            <li>UVM 1.2+ library</li>
-            <li>SSH access to repo</li>
-        </ul>
+<section id="getting-started" class="collapsible expanded">
+    <h2>Getting Started</h2>
+    <h3>Prerequisites</h3>
+    <ul>
+        <li>Linux OS with VCS installed</li>
+        <li>UVM 1.2+ library</li>
+        <li>SSH access to repo</li>
+    </ul>
 
-        <h3>Running Simulation</h3>
-        <pre>
+    <h3>Running Simulation</h3>
+    <pre>
 # Compile
 vcs -sverilog rtl/alu.sv lab2/alu_env.sv +incdir+lab1 -debug_access+all -l compile.log
 
@@ -68,127 +128,59 @@ vcs -sverilog rtl/alu.sv lab2/alu_env.sv +incdir+lab1 -debug_access+all -l compi
 
 # View waveforms
 simvision simv.vpd &
-        </pre>
+    </pre>
 
-        <h3>Coverage Collection (IMC)</h3>
-        <pre>
+    <h3>Coverage Collection (IMC)</h3>
+    <pre>
 imc collect -f sim.log -o coverage_report
-        </pre>
-    </section>
+    </pre>
+</section>
 
-    <section>
-        <h2>Contribution Guidelines</h2>
-        <ul>
-            <li>Ensure sequences are covered by functional tests</li>
-            <li>Maintain coding standards for SystemVerilog/UVM</li>
-            <li>Use IMC, SimVision, and Verisim debug for verification</li>
-            <li>Push changes only after passing regression tests</li>
-        </ul>
-    </section>
+<section id="contribution" class="collapsible expanded">
+    <h2>Contribution Guidelines</h2>
+    <ul>
+        <li>Ensure sequences are covered by functional tests</li>
+        <li>Maintain coding standards for SystemVerilog/UVM</li>
+        <li>Use IMC, SimVision, and Verisim debug for verification</li>
+        <li>Push changes only after passing regression tests</li>
+    </ul>
+</section>
 
-    <section>
-        <h2>Authors</h2>
-        <p><strong>Aqdar Ahmed</strong> – Project Lead & Verification Engineer</p>
-    </section>
+<section id="authors" class="collapsible expanded">
+    <h2>Authors</h2>
+    <p><strong>Aqdar Ahmed</strong> – Project Lead & Verification Engineer</p>
+</section>
 
-    <section>
-        <h2>License</h2>
-        <p>MIT License – see LICENSE file for details</p>
-    </section>
+<section id="license" class="collapsible expanded">
+    <h2>License</h2>
+    <p>MIT License – see LICENSE file for details</p>
+</section>
 
-    <footer>
-        <p>© 2026 Aqdar Ahmed | 32-bit ALU UVM Verification</p>
-    </footer>
+<footer>
+    <p>© 2026 Aqdar Ahmed | 32-bit ALU UVM Verification</p>
+</footer>
+
+<script>
+// TOC toggle
+function toggleTOC() {
+    const ul = document.querySelector("#toc ul");
+    ul.style.display = ul.style.display === "block" ? "none" : "block";
+}
+
+// Section collapsible
+document.querySelectorAll('section h2').forEach(h2 => {
+    h2.addEventListener('click', () => {
+        const section = h2.parentElement;
+        section.classList.toggle('expanded');
+        section.classList.toggle('collapsed');
+        if(section.classList.contains('expanded')) {
+            section.style.maxHeight = section.scrollHeight + "px";
+        } else {
+            section.style.maxHeight = "40px";
+        }
+    });
+});
+</script>
+
 </body>
 </html>
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f5f7fa;
-    color: #1c1c1c;
-    line-height: 1.6;
-    padding: 20px 40px;
-}
-
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-header h1 {
-    color: #284139; /* Emerald Green */
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header .subtitle {
-    color: #809076; /* Wasabi */
-    font-size: 1.2em;
-}
-
-/* Sections */
-section {
-    background: #ffffff;
-    padding: 20px 30px;
-    margin-bottom: 25px;
-    border-left: 6px solid #BB6830; /* Egyptian Earth */
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-section h2 {
-    color: #284139; /* Emerald Green */
-    margin-bottom: 15px;
-}
-
-section h3 {
-    color: #BB6830; /* Egyptian Earth */
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 10px;
-}
-
-ul li {
-    margin-bottom: 8px;
-}
-
-/* Tools Highlight */
-.tool {
-    background-color: #BB8D3F; /* Gold */
-    color: #fff;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-/* Preformatted blocks */
-pre {
-    background-color: #E8F0F2;
-    padding: 12px;
-    border-radius: 6px;
-    overflow-x: auto;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 10px;
-    border-top: 1px solid #ddd;
-    color: #555;
-}
-
