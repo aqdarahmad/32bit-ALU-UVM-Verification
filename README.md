@@ -45,13 +45,4 @@ It ensures functional correctness, performance, and reliability using constraine
 
 ---
 
-## Directory Structure
-```text
-project/
-│
-├─ lab1/       # Sequence items and sequences
-├─ lab2/       # Testbench top and environment
-├─ rtl/        # ALU RTL files
-├─ sim/        # Simulation scripts & logs
-├─ coverage/   # Functional coverage reports
-└─ README.md   # Project documentation
+
