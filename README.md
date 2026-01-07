@@ -1,6 +1,6 @@
 # 32-bit ALU UVM Verification
 
-**Professional Verification Environment using UVM, IMC, SimVision & Verisim Debug**
+**Professional Verification Environment using UVM, IMC, SimVision & verisium Debug**
 
 ---
 
