@@ -33,7 +33,11 @@ section.collapsible { max-height:5000px; transition:max-height 0.3s ease; overfl
 .tool { background-color:#BB8D3F; color:#fff; padding:2px 8px; border-radius:4px; font-weight:bold; }
 
 /* Preformatted blocks */
-pre { background-color:#E8F0F2; padding:12px; border-radius:6px; overflow-x:auto; margin-bottom:10px; }
+pre { background-color:#E8F0F2; padding:12px; border-radius:6px; overflow-x:auto; margin-bottom:10px; display:none; }
+
+/* Expand buttons */
+.expand-btn { background:#284139; color:#fff; border:none; padding:5px 10px; border-radius:5px; cursor:pointer; margin-bottom:8px; font-size:0.9em; }
+.expand-btn:hover { background:#507CA9; }
 
 /* Footer */
 footer { text-align:center; margin-top:40px; padding-top:10px; border-top:1px solid #ddd; color:#555; font-size:0.9em; }
@@ -76,49 +80,11 @@ footer { text-align:center; margin-top:40px; padding-top:10px; border-top:1px so
     <p>This project provides a complete <strong>UVM (Universal Verification Methodology)</strong> environment for a <strong>32-bit ALU</strong>. It ensures functional correctness, performance, and reliability using constrained-random stimulus, coverage analysis, and assertions.</p>
 </section>
 
-<section id="features" class="collapsible expanded">
-    <h2>Features</h2>
-    <ul>
-        <li><strong>UVM Components:</strong> Driver, Monitor, Sequencer, Scoreboard, Functional coverage, Assertions</li>
-        <li><strong>ALU Operations:</strong> Add, Subtract, AND, OR, XOR, Shifts, Rotates, Overflow detection</li>
-        <li><strong>Verification Methodology:</strong> Constrained-random tests, Transaction-based sequences, Reference model comparison</li>
-    </ul>
-</section>
-
-<section id="tools" class="collapsible expanded">
-    <h2>Tools Used</h2>
-    <ul>
-        <li><span class="tool">IMC</span> – Metrics & Coverage Collection</li>
-        <li><span class="tool">SimVision</span> – Waveform viewing & simulation debug</li>
-        <li><span class="tool">Verisim Debug</span> – Step-by-step RTL debugging</li>
-        <li><span class="tool">Synopsys VCS</span> – RTL simulation engine</li>
-    </ul>
-</section>
-
-<section id="structure" class="collapsible expanded">
-    <h2>Directory Structure</h2>
-    <pre>
-project/
-│
-├─ lab1/       # Sequence items and sequences
-├─ lab2/       # Testbench top and environment
-├─ rtl/        # ALU RTL files
-├─ sim/        # Simulation scripts & logs
-├─ coverage/   # Functional coverage reports
-└─ README.html # Project documentation
-    </pre>
-</section>
-
 <section id="getting-started" class="collapsible expanded">
     <h2>Getting Started</h2>
-    <h3>Prerequisites</h3>
-    <ul>
-        <li>Linux OS with VCS installed</li>
-        <li>UVM 1.2+ library</li>
-        <li>SSH access to repo</li>
-    </ul>
 
     <h3>Running Simulation</h3>
+    <button class="expand-btn" onclick="toggleCode(this)">Show/Hide Compile & Run Code</button>
     <pre>
 # Compile
 vcs -sverilog rtl/alu.sv lab2/alu_env.sv +incdir+lab1 -debug_access+all -l compile.log
@@ -131,29 +97,10 @@ simvision simv.vpd &
     </pre>
 
     <h3>Coverage Collection (IMC)</h3>
+    <button class="expand-btn" onclick="toggleCode(this)">Show/Hide Coverage Code</button>
     <pre>
 imc collect -f sim.log -o coverage_report
     </pre>
-</section>
-
-<section id="contribution" class="collapsible expanded">
-    <h2>Contribution Guidelines</h2>
-    <ul>
-        <li>Ensure sequences are covered by functional tests</li>
-        <li>Maintain coding standards for SystemVerilog/UVM</li>
-        <li>Use IMC, SimVision, and Verisim debug for verification</li>
-        <li>Push changes only after passing regression tests</li>
-    </ul>
-</section>
-
-<section id="authors" class="collapsible expanded">
-    <h2>Authors</h2>
-    <p><strong>Aqdar Ahmed</strong> – Project Lead & Verification Engineer</p>
-</section>
-
-<section id="license" class="collapsible expanded">
-    <h2>License</h2>
-    <p>MIT License – see LICENSE file for details</p>
 </section>
 
 <footer>
@@ -173,13 +120,21 @@ document.querySelectorAll('section h2').forEach(h2 => {
         const section = h2.parentElement;
         section.classList.toggle('expanded');
         section.classList.toggle('collapsed');
-        if(section.classList.contains('expanded')) {
-            section.style.maxHeight = section.scrollHeight + "px";
-        } else {
-            section.style.maxHeight = "40px";
-        }
+        section.style.maxHeight = section.classList.contains('expanded') ? section.scrollHeight + "px" : "40px";
     });
 });
+
+// Expandable code snippets
+function toggleCode(btn) {
+    const pre = btn.nextElementSibling;
+    if(pre.style.display === "block") {
+        pre.style.display = "none";
+        btn.textContent = "Show/Hide Code";
+    } else {
+        pre.style.display = "block";
+        btn.textContent = "Hide Code";
+    }
+}
 </script>
 
 </body>
