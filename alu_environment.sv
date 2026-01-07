@@ -1,11 +1,8 @@
 
+
 // alu_environment.sv
-// Lab 7 - Environment Component (Updated with Subscriber)
-// 
-// Environment: Top-level container that holds and connects all verification
-// components (Agent, Scoreboard, and Subscriber).
-
-
+// UVM Environment for ALU DUT
+// Contains Agent, Scoreboard, and Subscriber components
 class alu_environment extends uvm_env;
   
 

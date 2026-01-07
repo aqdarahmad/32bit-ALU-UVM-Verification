@@ -1,11 +1,9 @@
 
-// alu_driver.sv
-// Lab 3 - Driver Component
 // 
-// Driver: Converts transactions from sequencer into actual signal changes 
-// on the interface (acts as a translator from sequencer to interface)
-
-
+// 
+// alu_driver.sv
+// UVM Driver for ALU DUT
+// Drives transactions from sequencer to DUT via virtual interface
 class alu_driver extends uvm_driver#(alu_sequence_item);
   
   // Virtual interface to connect to the DUT 
@@ -17,7 +15,7 @@ class alu_driver extends uvm_driver#(alu_sequence_item);
   // Register with factory 
   `uvm_component_utils(alu_driver)
   
-  // Constructor 
+
   function new(string name, uvm_component parent);
     super.new(name, parent);
   endfunction

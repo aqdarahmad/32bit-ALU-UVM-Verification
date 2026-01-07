@@ -1,6 +1,8 @@
-
-// alu_subscriber.sv 
-// Basic subscriber with simple coverage
+// alu_subscriber.sv
+// UVM Subscriber for ALU DUT
+// Collects coverage data from monitored transactions
+// 
+//
 
 class alu_subscriber extends uvm_subscriber #(alu_sequence_item);
   
