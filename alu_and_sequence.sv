@@ -1,8 +1,6 @@
-
-  // alu_and_sequence.sv
+// alu_and_sequence.sv
 // Tests AND operation (Opcode = 3'b010)
 
-// 
 class alu_and_sequence extends uvm_sequence #(alu_sequence_item);
   
   `uvm_object_utils(alu_and_sequence)
@@ -10,32 +8,26 @@ class alu_and_sequence extends uvm_sequence #(alu_sequence_item);
   function new(string name = "alu_and_sequence");
     super.new(name);
   endfunction
+
   // Main sequence body
-  // This sequence resets the DUT and sends an AND operation
-  /
   task body();
     alu_sequence_item req;
-    
-    // Reset the DUT
-    req = alu_sequence_item::type_id::create("req");
-    req.rst = 1;
-    start_item(req);
-    `uvm_info(get_type_name(), "Resetting the DUT", UVM_MEDIUM)
-    finish_item(req);
-    #10;
-    
-    // Send AND transaction
+
+    // Create AND transaction
     req = alu_sequence_item::type_id::create("req");
     start_item(req);
     assert(req.randomize() with { 
-      rst == 0;
+      rst    == 0;
       Opcode == 3'b010; 
-    });
-    `uvm_info(get_type_name(), 
-              $sformatf("AND: %h & %h", req.A, req.B), 
-              UVM_MEDIUM)
+    }) else
+      `uvm_fatal(get_type_name(), "Randomization failed");
+
+    `uvm_info(
+      get_type_name(), 
+      $sformatf("AND operation: A=%0h, B=%0h", req.A, req.B), 
+      UVM_MEDIUM
+    )
     finish_item(req);
-    #10;
   endtask
   
 endclass : alu_and_sequence
