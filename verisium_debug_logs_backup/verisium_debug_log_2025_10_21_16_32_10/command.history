@@ -1,0 +1,4 @@
+Connected to dc:orionvtech.orionvtech.com:37177
+xmsim ida_probe -wave -wave_probe_args {alu_testbench.dut alu_testbench.intf}
+xmsim ida_probe -log=on
+xmsim run

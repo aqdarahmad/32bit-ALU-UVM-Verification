@@ -1,0 +1,4 @@
+statement aborts at 12: [SELECT snum FROM messages WHERE snum >= -1 AND sim_time >= 0 ORDER BY snum LIMIT 1;] database schema has changed17
+statement aborts at 17: [SELECT  id,str FROM dictionary ORDER BY id ASC;] database schema has changed17
+statement aborts at 7: [SELECT count(*) FROM sqlite_master;] database schema has changed17
+statement aborts at 7: [SELECT count(*) FROM sqlite_master;] database schema has changed17

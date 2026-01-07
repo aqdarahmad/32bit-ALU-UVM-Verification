@@ -1,0 +1,81 @@
+karaf: PID is: 2437934 (this is karaf's PID. for verisium debug PID cat verisium_debug.pid in the logs directory)
+Picked up _JAVA_OPTIONS:  -XX:+ExitOnOutOfMemoryError -XX:OnOutOfMemoryError="touch /home/Trainee23/project/verisium_debug_logs/out_of_memory_error" 
+CompileCommand: exclude javax/swing/text/GlyphView.getBreakSpot
+WARNING: package com.sun.java.swing.plaf.windows not in java.desktop
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+Loading libdac.so from /usr/cadence/installs/VERISIUMDBGAGL82509/tools/lib/64bit/libdac.so
+
+Dump Strap Design DB Order:
+
+End of dump Strap Design DB Order
+
+
+
+
+in 'SimConnect::_simcontrolConnect' overlay db = null, overlayH = 0, is valid = false, operation = dapOpen, duFilename = null, isLiveSim = true
+in 'JDACTBDataProvider::notifyLiveConnectionDB', sessionId = 0
+
+
+**** found lwd dir to be: /home/Trainee23/project/xcelium.d/worklib/alu_testbench/sv
+
+
+
+**** found cdslib to be: /home/Trainee23/project/xcelium.d/run.d/cds.lib
+
+in 'JDACTBDataProvider::notifyLiveConnectionDB', 'dbH' represents 'simulator' db.
+PPEAttributes values:
+    isAutofetch = false
+    isPersistentSources = false
+    isXprop = false
+    cdslib = /home/Trainee23/project/xcelium.d/run.d/cds.lib
+    snapshot = worklib.alu_testbench:sv
+    workdir = /home/Trainee23/project
+    xceliumDir = /home/Trainee23/project/xcelium.d
+    rundDir = /home/Trainee23/project/xcelium.d/run.d
+    bits = 64
+    cds_implicit_tmpdir = 
+    cds_alternate_tmpdir = 
+    du_agent = 
+    lwddir = /home/Trainee23/project/xcelium.d/worklib/alu_testbench/sv
+    cds_alternate_cdslib = 
+    elab_options = 
+    found = true
+    nclsRun = false
+    includeCdslib = true
+    nclsOpts =  -snapshot -cdslib /home/Trainee23/project/xcelium.d/run.d/cds.lib -64
+    isMceMode = false
+    isMceInvolved = false
+    mceLshmDbPath = 
+    lowPowerInformationAvailable = false
+    hasLshmFile = false
+    workdirIsDirectory = true
+    hasOverlayRelatedInformation = true
+    cds_implicit_tmplib = 
+    cds_other_implicit_tmplibs = 
+
+
+Dump Strap Design DB Order:
+
+Strap design: simulator #8
+
+End of dump Strap Design DB Order
+
+
+explainSignalWithLLM (GSLAdvisorExplainSignalAction) action registered
+daSuggestSmartlogFilter (GSLAdvisorSuggestFiltersAction) action registered
+
+
+GOT COMMAND: 
+
+
+
+Scripting Service started, listening on port 33191...
+
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.cadence.ufi.gui.views.ui.InnerContentTabbedPaneUI (jar:bundle://79fd63e7-9517-4493-a66f-615d7fdbc002_77.0:0/!/) to field javax.swing.plaf.basic.BasicTabbedPaneUI.tabScroller
+WARNING: Please consider reporting this to the maintainers of com.cadence.ufi.gui.views.ui.InnerContentTabbedPaneUI
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+*** shutting down gRPC server since JVM is shutting down
+*** server shut down

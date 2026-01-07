@@ -1,0 +1,16 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/home/Trainee23/project/alu_interface.sv
+/home/Trainee23/project/alu.sv
+/home/Trainee23/project/alu_sequence_item.sv
+/home/Trainee23/project/alu_driver.sv
+/home/Trainee23/project/alu_sequencer.sv
+/home/Trainee23/project/alu_monitor.sv
+/home/Trainee23/project/alu_subscriber.sv
+/home/Trainee23/project/alu_scoreboard.sv
+/home/Trainee23/project/alu_agent.sv
+/home/Trainee23/project/alu_environment.sv
+/home/Trainee23/project/alu_random_test.sv
+/home/Trainee23/project/testbench.sv

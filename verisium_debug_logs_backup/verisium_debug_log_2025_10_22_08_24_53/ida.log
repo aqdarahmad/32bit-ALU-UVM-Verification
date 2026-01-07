@@ -1,0 +1,172 @@
+11:23:36:2336 [important] [FelixStartLevel] WARN  - InfoSource version is empty in getMajorMinorVersion()
+11:23:36:2336 [important] [FelixStartLevel] WARN  - InfoSource version not found!! skipping relevant version checks
+11:23:36:2336 [important] [FelixStartLevel] INFO  - xmsim gcc version is 9.3.0
+11:23:36:2336 [important] [FelixStartLevel] INFO  - indago gcc version is 9.3.0
+11:23:36:2336 [important] [TangoTaskManager-3] WARN  - An Indago Snapshot/LWD was not loaded. Scripting API functionality may be impacted.
+11:23:38:2338 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-5] INFO  - query: 
+11:24:00:240 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+
+11:24:00:240 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+11:24:01:241 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+11:24:01:241 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+11:24:05:245 [user_actions] [AWT-EventQueue-0] DEBUG - Keep current (GUFIQuestionDialog$1)
+	dialog = restoreLayoutsDialog (GUFIQuestionDialog)
+
+11:24:07:247 [important] [TangoTaskManager-3] INFO  - ScriptingActivator while loop has finished
+11:24:08:248 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+
+11:24:17:2417 [user_actions] [AWT-EventQueue-0] DEBUG - recordLogs (GSLRecordLogsAction)
+
+11:24:17:2417 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-8] INFO  - query: 
+11:24:17:2417 [com.cadence.smartlog.bl.common.SLUtils] [Thread-11] INFO  - query: 
+11:24:17:2417 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-2] INFO  - query: 
+11:24:24:2424 [user_actions] [AWT-EventQueue-0] DEBUG - showInstTypeDeclaration (GSLShowInstTypeDeclaration)
+	source = designTopsTreeTable
+	entity = alu_testbench
+
+11:24:47:2447 [user_actions] [AWT-EventQueue-0] DEBUG - Waveform (GSLSendVariablesToWaveAction)
+	source = designTopsTreeTable_topsSignalsTreeTable
+	entities[7] = 
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+11:24:52:2452 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+
+11:24:52:2452 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+11:24:52:2452 [important] [Indago DAC notify callback receiver] WARN  - got the following for key values in msg_destination_files: 1
+11:24:52:2452 [important] [Indago DAC notify callback receiver] WARN  - Dest File: key=1 val=stdout, shortName: stdout
+11:24:52:2452 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-10] INFO  - query: (destination_files LIKE "" )
+11:24:52:2452 [com.cadence.smartlog.bl.common.SLUtils] [Thread-6] INFO  - query: (destination_files LIKE "" )
+11:24:52:2452 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-0] INFO  - query: (destination_files LIKE "" )
+11:24:52:2452 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-16] INFO  - query: 
+11:24:52:2452 [com.cadence.smartlog.bl.common.SLUtils] [Thread-6] INFO  - query: 
+11:24:52:2452 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-5] INFO  - query: 
+11:24:53:2453 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+11:24:53:2453 [important] [Indago DAC notify callback receiver] WARN  - got the following for key values in msg_destination_files: 1
+11:24:53:2453 [important] [Indago DAC notify callback receiver] WARN  - Dest File: key=1 val=stdout, shortName: stdout
+11:24:53:2453 [com.cadence.smartlog.bl.common.SLUtils] [Thread-7] INFO  - query: 
+11:24:53:2453 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-4] INFO  - query: 
+11:25:09:259 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:09:259 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:10:2510 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:10:2510 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:11:2511 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:11:2511 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:13:2513 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:13:2513 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:55:2555 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:55:2555 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:55:2555 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:55:2555 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:56:2556 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:56:2556 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:56:2556 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:57:2557 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:57:2557 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:57:2557 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:57:2557 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:25:57:2557 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:26:01:261 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:02:262 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:02:262 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:02:262 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:03:263 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:03:263 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:03:263 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:03:263 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:04:264 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:04:264 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:04:264 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:04:264 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:23:2623 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:23:2623 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:23:2623 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 2502
+
+11:26:24:2624 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:26:25:2625 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 2502
+
+11:27:55:2755 [user_actions] [AWT-EventQueue-0] DEBUG - OK (GUFIQuestionDialog$1)
+	dialog = confirmExitDlg (GUFIQuestionDialog)
+

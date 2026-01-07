@@ -1,0 +1,150 @@
+17:52:27:5227 [important] [FelixStartLevel] WARN  - InfoSource version is empty in getMajorMinorVersion()
+17:52:27:5227 [important] [FelixStartLevel] WARN  - InfoSource version not found!! skipping relevant version checks
+17:52:27:5227 [important] [FelixStartLevel] INFO  - xmsim gcc version is 9.3.0
+17:52:27:5227 [important] [FelixStartLevel] INFO  - indago gcc version is 9.3.0
+17:52:27:5227 [important] [TangoTaskManager-3] WARN  - An Indago Snapshot/LWD was not loaded. Scripting API functionality may be impacted.
+17:52:30:5230 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-5] INFO  - query: 
+17:52:41:5241 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+
+17:52:43:5243 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+17:52:43:5243 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+17:52:43:5243 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+17:52:48:5248 [user_actions] [AWT-EventQueue-0] DEBUG - Keep current (GUFIQuestionDialog$1)
+	dialog = restoreLayoutsDialog (GUFIQuestionDialog)
+
+17:52:48:5248 [important] [TangoTaskManager-3] INFO  - ScriptingActivator while loop has finished
+17:52:49:5249 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+
+17:52:55:5255 [user_actions] [AWT-EventQueue-0] DEBUG - recordLogs (GSLRecordLogsAction)
+
+17:52:55:5255 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-5] INFO  - query: 
+17:52:55:5255 [com.cadence.smartlog.bl.common.SLUtils] [Thread-14] INFO  - query: 
+17:52:55:5255 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-9] INFO  - query: 
+17:52:58:5258 [user_actions] [AWT-EventQueue-0] DEBUG - showInstTypeDeclaration (GSLShowInstTypeDeclaration)
+	source = designTopsTreeTable
+	entity = alu_testbench
+
+17:53:01:531 [user_actions] [AWT-EventQueue-0] DEBUG - showInstTypeDeclaration (GSLShowInstTypeDeclaration)
+	source = designTopsTreeTable
+	entity = alu_testbench
+
+17:53:11:5311 [user_actions] [AWT-EventQueue-0] DEBUG - showTypeSource (GSLShowTypeSourceAction)
+	source = testbenchTopsTreeTable
+	entity = uvm_test_top
+
+17:53:21:5321 [user_actions] [AWT-EventQueue-0] DEBUG - showInstTypeDeclaration (GSLShowInstTypeDeclaration)
+	source = designTopsTreeTable
+	entity = alu_testbench
+
+17:53:42:5342 [user_actions] [AWT-EventQueue-0] DEBUG - Waveform (GSLSendVariablesToWaveAction)
+	source = designTopsTreeTable_topsSignalsTreeTable
+	entities[2] = 
+		alu_testbench.clk
+		alu_testbench.rst
+
+17:53:44:5344 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+
+17:53:44:5344 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+17:53:44:5344 [important] [Indago DAC notify callback receiver] WARN  - got the following for key values in msg_destination_files: 1
+17:53:44:5344 [important] [Indago DAC notify callback receiver] WARN  - Dest File: key=1 val=stdout, shortName: stdout
+17:53:44:5344 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-8] INFO  - query: (destination_files LIKE "" )
+17:53:44:5344 [com.cadence.smartlog.bl.common.SLUtils] [Thread-14] INFO  - query: (destination_files LIKE "" )
+17:53:44:5344 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-1] INFO  - query: (destination_files LIKE "" )
+17:53:44:5344 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-7] INFO  - query: 
+17:53:44:5344 [com.cadence.smartlog.bl.common.SLUtils] [Thread-14] INFO  - query: 
+17:53:44:5344 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-1] INFO  - query: 
+17:53:45:5345 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+17:53:45:5345 [important] [Indago DAC notify callback receiver] WARN  - got the following for key values in msg_destination_files: 1
+17:53:45:5345 [important] [Indago DAC notify callback receiver] WARN  - Dest File: key=1 val=stdout, shortName: stdout
+17:53:45:5345 [com.cadence.smartlog.bl.common.SLUtils] [Thread-10] INFO  - query: 
+17:53:45:5345 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-7] INFO  - query: 
+17:53:48:5348 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 0
+
+17:53:48:5348 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 0
+
+17:53:48:5348 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 0
+
+17:53:48:5348 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 0
+
+17:53:48:5348 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 0
+
+17:53:48:5348 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 0
+
+17:53:49:5349 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 0
+
+17:53:49:5349 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = Message 0
+
+17:53:50:5350 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 0
+
+17:53:50:5350 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 0
+
+17:53:50:5350 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 0
+
+17:53:50:5350 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 0
+
+17:53:50:5350 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 0
+
+17:53:51:5351 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = Message 0
+
+17:54:10:5410 [user_actions] [AWT-EventQueue-0] DEBUG - showInstTypeDeclaration (GSLShowInstTypeDeclaration)
+	source = designTopsTreeTable
+	entity = alu_testbench.intf
+
+17:54:15:5415 [user_actions] [AWT-EventQueue-0] DEBUG - Waveform (GSLSendVariablesToWaveAction)
+	source = designTopsTreeTable_topsSignalsTreeTable
+	entities[9] = 
+		[0] alu_testbench.intf.Opcode[2:0]
+		[1] alu_testbench.intf.A[31:0]
+		..
+		[4] alu_testbench.intf.Overflow
+		..
+		[7] alu_testbench.intf.clk
+		[8] alu_testbench.intf.rst
+
+17:54:17:5417 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+
+17:54:17:5417 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+17:54:17:5417 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+17:54:17:5417 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+17:54:48:5448 [user_actions] [AWT-EventQueue-0] DEBUG - Waveform (GSLSendVariablesToWaveAction)
+	source = designTopsTreeTable_topsSignalsTreeTable
+	entities[7] = 
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+17:54:49:5449 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+
+17:54:49:5449 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+17:54:49:5449 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+17:56:19:5619 [user_actions] [AWT-EventQueue-0] DEBUG - OK (GUFIQuestionDialog$1)
+	dialog = confirmExitDlg (GUFIQuestionDialog)
+

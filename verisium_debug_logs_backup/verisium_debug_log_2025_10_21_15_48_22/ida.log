@@ -1,0 +1,583 @@
+18:48:06:486 [important] [FelixStartLevel] WARN  - InfoSource version is empty in getMajorMinorVersion()
+18:48:06:486 [important] [FelixStartLevel] WARN  - InfoSource version not found!! skipping relevant version checks
+18:48:07:487 [important] [FelixStartLevel] INFO  - xmsim gcc version is 9.3.0
+18:48:07:487 [important] [FelixStartLevel] INFO  - indago gcc version is 9.3.0
+18:48:07:487 [important] [TangoTaskManager-3] WARN  - An Indago Snapshot/LWD was not loaded. Scripting API functionality may be impacted.
+18:48:07:487 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-5] INFO  - query: 
+18:48:17:4817 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+
+18:48:17:4817 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+18:48:17:4817 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+18:48:17:4817 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+18:48:21:4821 [user_actions] [AWT-EventQueue-0] DEBUG - Keep current (GUFIQuestionDialog$1)
+	dialog = restoreLayoutsDialog (GUFIQuestionDialog)
+
+18:48:21:4821 [important] [TangoTaskManager-3] INFO  - ScriptingActivator while loop has finished
+18:48:22:4822 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+
+18:48:43:4843 [user_actions] [AWT-EventQueue-0] DEBUG - showInstTypeDeclaration (GSLShowInstTypeDeclaration)
+	source = designTopsTreeTable
+	entity = alu_testbench
+
+18:48:55:4855 [user_actions] [AWT-EventQueue-0] DEBUG - Waveform (GSLSendVariablesToWaveAction)
+	source = designTopsTreeTable_topsSignalsTreeTable
+	entities[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:48:57:4857 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+
+18:48:57:4857 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+18:48:57:4857 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+18:49:32:4932 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:32:4932 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:32:4932 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:33:4933 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:33:4933 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:34:4934 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:34:4934 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:36:4936 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:37:4937 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:37:4937 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:38:4938 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:38:4938 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:38:4938 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:41:4941 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:41:4941 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:41:4941 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:41:4941 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:42:4942 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:42:4942 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:42:4942 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:42:4942 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:42:4942 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:43:4943 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:43:4943 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:43:4943 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:43:4943 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:43:4943 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:43:4943 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:44:4944 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:44:4944 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:44:4944 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:44:4944 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:44:4944 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:45:4945 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:45:4945 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:49:46:4946 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:56:57:5657 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:56:57:5657 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:56:59:5659 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:56:59:5659 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:56:59:5659 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:57:00:570 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:57:01:571 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:57:01:571 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:57:02:572 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:57:02:572 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:57:02:572 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:57:03:573 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected[7] = 
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.clk
+		alu_testbench.dut.rst
+
+18:57:36:5736 [general] [TangoTaskManager-6] ERROR - un-handled exception in GUFITaskExecutor.handleException:java.lang.NullPointerException
+18:57:36:5736 [general] [TangoTaskManager-6] ERROR - un-handled exception in GUFITaskExecutor.handleException
+java.lang.NullPointerException: null
+	at com.cadence.indago.waveform2.ui.ZoomAxis.collectUserDataFromEntity(ZoomAxis.java:803) ~[?:?]
+	at com.cadence.indago.waveform2.ui.WaveTraceViewBase.refreshTrace(WaveTraceViewBase.java:319) ~[?:?]
+	at com.cadence.indago.waveform2.ui.ZoomAxis.refreshTrace(ZoomAxis.java:551) ~[?:?]
+	at com.cadence.indago.waveform2.ui.ZoomAxis$3.doWork(ZoomAxis.java:181) ~[?:?]
+	at com.cadence.ufi.gui.worker.GUFITaskExecutor.doInBackground(GUFITaskExecutor.java:121) ~[?:?]
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295) ~[?:1.8.0_202-CDS_2021_b1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_202-CDS_2021_b1]
+	at javax.swing.SwingWorker.run(SwingWorker.java:334) ~[?:1.8.0_202-CDS_2021_b1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_202-CDS_2021_b1]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_202-CDS_2021_b1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_202-CDS_2021_b1]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_202-CDS_2021_b1]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_202-CDS_2021_b1]
+19:00:56:056 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = alu_testbench.dut.A[31:0]
+
+19:00:57:057 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = alu_testbench.dut.A[31:0]
+
+19:00:57:057 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = alu_testbench.dut.A[31:0]
+
+19:00:58:058 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = alu_testbench.dut.A[31:0]
+
+19:00:58:058 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = alu_testbench.dut.A[31:0]
+
+19:02:13:213 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = alu_testbench.dut.A[31:0]
+
+19:02:13:213 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = alu_testbench.dut.A[31:0]
+
+19:02:14:214 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = alu_testbench.dut.A[31:0]
+
+19:02:15:215 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = alu_testbench.dut.A[31:0]
+
+19:02:15:215 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom Out (ZoomAction)
+	selected = alu_testbench.dut.A[31:0]
+
+19:02:16:216 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = alu_testbench.dut.A[31:0]
+
+19:10:38:1038 [user_actions] [AWT-EventQueue-0] DEBUG - copy (GSLConsoleEditor$2)
+
+19:14:03:143 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+
+19:14:03:143 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+19:14:03:143 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+19:14:03:143 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+19:14:11:1411 [user_actions] [AWT-EventQueue-0] DEBUG - OK (GUFIQuestionDialog$1)
+	dialog = confirmExitDlg (GUFIQuestionDialog)
+

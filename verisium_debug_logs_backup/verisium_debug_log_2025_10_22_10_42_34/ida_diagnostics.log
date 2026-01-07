@@ -1,0 +1,4 @@
+statement aborts at 11: [SELECT DISTINCT name FROM attributes;] database schema has changed17
+statement aborts at 19: [SELECT value FROM general WHERE key LIKE 'msg_destination_files' ORDER BY id;] database schema has changed17
+statement aborts at 7: [SELECT count(*) FROM sqlite_master;] database schema has changed17
+statement aborts at 7: [SELECT count(*) FROM sqlite_master;] database schema has changed17

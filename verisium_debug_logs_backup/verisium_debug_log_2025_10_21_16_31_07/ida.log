@@ -1,0 +1,78 @@
+19:26:11:2611 [important] [FelixStartLevel] WARN  - InfoSource version is empty in getMajorMinorVersion()
+19:26:11:2611 [important] [FelixStartLevel] WARN  - InfoSource version not found!! skipping relevant version checks
+19:26:12:2612 [important] [FelixStartLevel] INFO  - xmsim gcc version is 9.3.0
+19:26:12:2612 [important] [FelixStartLevel] INFO  - indago gcc version is 9.3.0
+19:26:12:2612 [important] [TangoTaskManager-3] WARN  - An Indago Snapshot/LWD was not loaded. Scripting API functionality may be impacted.
+19:26:12:2612 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-5] INFO  - query: 
+19:26:23:2623 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+
+19:26:23:2623 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+19:26:23:2623 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+19:26:23:2623 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+19:27:12:2712 [important] [TangoTaskManager-3] WARN  - python scripts are waiting to start for 60 seconds guiReady=false simulatorReady=true consoleActiveSvc is not null consoleActiveSvc.consoleActive() =true
+19:27:14:2714 [user_actions] [AWT-EventQueue-0] DEBUG - Keep current (GUFIQuestionDialog$1)
+	dialog = restoreLayoutsDialog (GUFIQuestionDialog)
+
+19:27:15:2715 [important] [TangoTaskManager-3] INFO  - ScriptingActivator while loop has finished
+19:27:16:2716 [user_actions] [AWT-EventQueue-0] DEBUG - refreshSchematicAttributes (SchematicActionsManager$24)
+
+19:29:36:2936 [user_actions] [AWT-EventQueue-0] DEBUG - Waveform (GSLSendVariablesToWaveAction)
+	source = designTopsTreeTable_topsSignalsTreeTable
+	entities[7] = 
+		alu_testbench.dut.clk
+		alu_testbench.dut.A[31:0]
+		alu_testbench.dut.B[31:0]
+		alu_testbench.dut.Error
+		alu_testbench.dut.Opcode[2:0]
+		alu_testbench.dut.Result[31:0]
+		alu_testbench.dut.rst
+
+19:29:43:2943 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+
+19:29:43:2943 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+19:29:43:2943 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+19:30:06:306 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = alu_testbench.dut
+
+19:30:06:306 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = alu_testbench.dut
+
+19:30:06:306 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = alu_testbench.dut
+
+19:30:07:307 [user_actions] [AWT-EventQueue-0] DEBUG - Zoom In (ZoomAction)
+	selected = alu_testbench.dut
+
+19:30:36:3036 [user_actions] [AWT-EventQueue-0] DEBUG - showInstTypeDeclaration (GSLShowInstTypeDeclaration)
+	source = designTopsTreeTable
+	entity = worklib.$unit_0x548c7051::
+
+19:30:57:3057 [user_actions] [AWT-EventQueue-0] DEBUG - Waveform (GSLSendVariablesToWaveAction)
+	source = designTopsTreeTable_topsSignalsTreeTable
+	entities[9] = 
+		[0] alu_testbench.intf.Overflow
+		[1] alu_testbench.intf.A[31:0]
+		..
+		[4] alu_testbench.intf.Opcode[2:0]
+		..
+		[7] alu_testbench.intf.clk
+		[8] alu_testbench.intf.rst
+
+19:30:59:3059 [user_actions] [AWT-EventQueue-0] DEBUG - run (GSLInteractiveRunPanel$3)
+
+19:30:59:3059 [user_actions] [AWT-EventQueue-0] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+19:30:59:3059 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+19:30:59:3059 [user_actions] [AWT-EventQueue-0] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+19:31:04:314 [user_actions] [AWT-EventQueue-0] DEBUG - ExitApplication (GSLExitApplicationAction)
+
+19:31:07:317 [user_actions] [AWT-EventQueue-0] DEBUG - OK (GUFIQuestionDialog$1)
+	dialog = confirmExitDlg (GUFIQuestionDialog)
+

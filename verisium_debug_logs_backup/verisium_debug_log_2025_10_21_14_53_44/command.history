@@ -1,0 +1,8 @@
+Connected to dc:orionvtech.orionvtech.com:46605
+xmsim ida_probe -log=on
+xmsim ida_probe -wave -wave_probe_args {alu_testbench.clk alu_testbench.rst}
+xmsim run
+xmsim ida_probe -wave -wave_probe_args {alu_testbench.intf.Overflow alu_testbench.intf.Underflow alu_testbench.intf.clk alu_testbench.intf.rst alu_testbench.intf.A alu_testbench.intf.Opcode alu_testbench.intf.Result alu_testbench.intf.Error alu_testbench.intf.B}
+xmsim run
+xmsim ida_probe -wave -wave_probe_args {alu_testbench.dut.A alu_testbench.dut.B alu_testbench.dut.Error alu_testbench.dut.Opcode alu_testbench.dut.Result alu_testbench.dut.clk alu_testbench.dut.rst}
+xmsim run
