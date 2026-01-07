@@ -11,6 +11,10 @@ UVM_PLI
 -sv
 design.sv
 testbench.sv
+-source_debug
+-CLASSLINEDEBUG
+-EXT_SRC_INFO
+-EXT_MACRO_SRC_INFO
 -CDSLIB
 ./xcelium.d/run.lnx8664.25.03.d/cdsrun.lib
 -HDLVAR

@@ -1,1 +1,6 @@
-Connected to dc:orionvtech.orionvtech.com:47129
+Connected to dc:orionvtech.orionvtech.com:54783
+xmsim ida_probe -log=on
+xmsim ida_probe -log=off
+xmsim ida_probe -log=on
+xmsim ida_probe -log=off
+xmsim ida_probe -log=on

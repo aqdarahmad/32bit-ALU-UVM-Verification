@@ -1,0 +1,40 @@
+2025-11-22T16:12:51,568 | ERROR | activator-1-thread-1 | Activator                        | 47 - org.apache.karaf.management.server - 4.4.3 | Can't init JMXConnectorServer: Cannot give port number without host name
+2025-11-22T16:12:51,579 | WARN  | activator-1-thread-1 | Activator                        | 47 - org.apache.karaf.management.server - 4.4.3 | java.rmi.server.hostname system property is already set to 0.0.0.0. Apache Karaf doesn't override it
+2025-11-22T16:12:51,579 | ERROR | activator-1-thread-1 | Activator                        | 47 - org.apache.karaf.management.server - 4.4.3 | Can't init JMXConnectorServer: Cannot give port number without host name
+2025-11-22T16:12:51,785 | INFO  | activator-1-thread-1 | DefaultIoServiceFactoryFactory   | 56 - org.apache.sshd.osgi - 2.9.2 | No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2025-11-22T16:12:51,801 | ERROR | activator-1-thread-1 | Nio2Acceptor                     | 56 - org.apache.sshd.osgi - 2.9.2 | bind(/0.0.0.0:8101) - failed (BindException) to bind: Address already in use
+2025-11-22T16:12:51,802 | WARN  | activator-1-thread-1 | Activator                        | 54 - org.apache.karaf.shell.ssh - 4.4.3 | Exception caught while starting SSH server
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:461) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:453) ~[?:?]
+	at sun.nio.ch.AsynchronousServerSocketChannelImpl.bind(AsynchronousServerSocketChannelImpl.java:164) ~[?:?]
+	at org.apache.sshd.common.io.nio2.Nio2Acceptor.bind(Nio2Acceptor.java:83) ~[!/:2.9.2]
+	at org.apache.sshd.common.io.nio2.Nio2Acceptor.bind(Nio2Acceptor.java:173) ~[!/:2.9.2]
+	at org.apache.sshd.server.SshServer.start(SshServer.java:331) ~[!/:2.9.2]
+	at org.apache.karaf.shell.ssh.Activator.createAndRunSshServer(Activator.java:129) ~[?:?]
+	at org.apache.karaf.shell.ssh.Activator.doStart(Activator.java:116) ~[?:?]
+	at org.apache.karaf.util.tracker.BaseActivator.run(BaseActivator.java:312) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+2025-11-22T16:12:51,810 | ERROR | activator-1-thread-1 | Nio2Acceptor                     | 56 - org.apache.sshd.osgi - 2.9.2 | bind(/0.0.0.0:8101) - failed (BindException) to bind: Address already in use
+2025-11-22T16:12:51,811 | WARN  | activator-1-thread-1 | Activator                        | 54 - org.apache.karaf.shell.ssh - 4.4.3 | Exception caught while starting SSH server
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:461) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:453) ~[?:?]
+	at sun.nio.ch.AsynchronousServerSocketChannelImpl.bind(AsynchronousServerSocketChannelImpl.java:164) ~[?:?]
+	at org.apache.sshd.common.io.nio2.Nio2Acceptor.bind(Nio2Acceptor.java:83) ~[!/:2.9.2]
+	at org.apache.sshd.common.io.nio2.Nio2Acceptor.bind(Nio2Acceptor.java:173) ~[!/:2.9.2]
+	at org.apache.sshd.server.SshServer.start(SshServer.java:331) ~[!/:2.9.2]
+	at org.apache.karaf.shell.ssh.Activator.createAndRunSshServer(Activator.java:129) ~[?:?]
+	at org.apache.karaf.shell.ssh.Activator.doStart(Activator.java:116) ~[?:?]
+	at org.apache.karaf.util.tracker.BaseActivator.run(BaseActivator.java:312) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]

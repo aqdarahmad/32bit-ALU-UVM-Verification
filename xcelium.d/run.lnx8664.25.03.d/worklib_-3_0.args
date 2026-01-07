@@ -4,6 +4,10 @@
 //
 -RUNMODE
 -sv
+-source_debug
+-CLASSLINEDEBUG
+-EXT_SRC_INFO
+-EXT_MACRO_SRC_INFO
 -I_INCDIR
 /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/sv/src
 -DEFINE

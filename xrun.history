@@ -54,3 +54,13 @@ s26(07Jan2026:20:03:01):  xrun -sv -uvm design.sv testbench.sv +UVM_TESTNAME=alu
 s27(07Jan2026:20:04:06):  xrun -sv -uvm +incdir+. design.sv testbench.sv +UVM_TESTNAME=alu_random_test 
 #e28(07Jan2026:20:04:46): source ./xcelium.d/env.d/env.history.07Jan2026_20_04_46
 s28(07Jan2026:20:04:46):  xrun -sv -uvm design.sv testbench.sv +UVM_TESTNAME=alu_random_test 
+#e29(07Jan2026:20:35:49): source ./xcelium.d/env.d/env.history.07Jan2026_20_35_49
+s29(07Jan2026:20:35:49):  xrun -sv -uvm design.sv testbench.sv 
+#e30(07Jan2026:20:42:27): source ./xcelium.d/env.d/env.history.07Jan2026_20_42_27
+s30(07Jan2026:20:42:27):  xrun -sv -uvm design.sv testbench.sv 
+#e31(07Jan2026:20:43:14): source ./xcelium.d/env.d/env.history.07Jan2026_20_43_14
+s31(07Jan2026:20:43:14):  xrun -sv -uvm design.sv testbench.sv -obts verisuim_interactive 
+#e32(07Jan2026:20:43:28): source ./xcelium.d/env.d/env.history.07Jan2026_20_43_28
+s32(07Jan2026:20:43:28):  xrun -sv -uvm design.sv testbench.sv -opts verisuim_interactive 
+#e33(07Jan2026:20:46:05): source ./xcelium.d/env.d/env.history.07Jan2026_20_46_05
+s33(07Jan2026:20:46:05):  xrun -sv -uvm design.sv testbench.sv -debug_opts verisium_interactive 

@@ -4,7 +4,8 @@
 //
 -loadpli
 /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmpli.so:uvm_pli_boot
-+UVM_TESTNAME=alu_random_test
+-LWDGEN
+-DISABLE_XFORM
 -no_analogsolver
 -MESSAGES
 -dms_perf
