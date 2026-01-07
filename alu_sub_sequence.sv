@@ -1,9 +1,9 @@
 
 // alu_sub_sequence.sv
-// Lab 5 - Subtraction Sequence
+
 // Tests SUB operation (Opcode = 3'b001)
 
-
+  // 
 class alu_sub_sequence extends uvm_sequence #(alu_sequence_item);
   
   `uvm_object_utils(alu_sub_sequence)
@@ -11,7 +11,8 @@ class alu_sub_sequence extends uvm_sequence #(alu_sequence_item);
   function new(string name = "alu_sub_sequence");
     super.new(name);
   endfunction
-  
+  // Main sequence body
+  // This sequence resets the DUT and sends a SUB operation
   task body();
     alu_sequence_item req;
     

@@ -1,9 +1,9 @@
 
 // alu_xor_sequence.sv
-// Lab 5 - XOR Sequence
+
 // Tests XOR operation (Opcode = 3'b100)
 
-
+// 
 class alu_xor_sequence extends uvm_sequence #(alu_sequence_item);
   
   `uvm_object_utils(alu_xor_sequence)
@@ -11,7 +11,8 @@ class alu_xor_sequence extends uvm_sequence #(alu_sequence_item);
   function new(string name = "alu_xor_sequence");
     super.new(name);
   endfunction
-  
+  // Main sequence body
+  // This sequence resets the DUT and sends an XOR operation
   task body();
     alu_sequence_item req;
     

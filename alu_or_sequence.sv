@@ -1,17 +1,19 @@
 
 // alu_or_sequence.sv
-// Lab 5 - OR Sequence
+
 // Tests OR operation (Opcode = 3'b011)
 
-
+//
+//   
 class alu_or_sequence extends uvm_sequence #(alu_sequence_item);
   
   `uvm_object_utils(alu_or_sequence)
-  
+  // Constructor
   function new(string name = "alu_or_sequence");
     super.new(name);
   endfunction
-  
+  // Main sequence body
+  // This sequence resets the DUT and sends an OR operation
   task body();
     alu_sequence_item req;
     
