@@ -1,5 +1,9 @@
 xrun(64): 25.03-s006: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+
 TOOL:	xrun(64)	25.03-s006: Started on Jan 08, 2026 at 13:51:34 EET
+
+TOOL:	xrun(64)	25.03-s006: Started on Jan 07, 2026 at 20:46:04 EET
+
 xrun
 	-sv
 	-uvm
@@ -7,7 +11,10 @@ xrun
 	+incdir+.
 	design.sv
 	testbench.sv
+
 	+UVM_TESTNAME=alu_random_test
+
+
 	-debug_opts verisium_interactive
 		-source_debug
 		-lwdgen
@@ -18,7 +25,120 @@ xrun
 		-ext_src_info
 		-ext_macro_src_info
 		-disable_xform
+
 xrun: *W,WKWTLK: Waiting for a Exclusive lock on file '/home/Trainee23/project/xcelium.d/run.lnx8664.25.03.d/.xmlib.lock'. pid:2944284.
 
 Additional info:
 TOOL:	xrun(64)	25.03-s006 (CL: 809911 ), orionvtech, Linux 4.18.0-553.16.1.el8_10.x86_64 #1 SMP Thu Aug 8 07:11:46 EDT 2024 x86_64
+
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d
+file: design.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: testbench.sv
+	interface worklib.alu_interface:sv
+		errors: 0, warnings: 0
+      A == -2147483648;      // Min negative signed 32-bit
+                     |
+xmvlog: *W,SGNOVF (alu_underflow_sequence.sv,32|21): sign overflow during conversion from text [2.5(IEEE)] (32 bits).
+	module worklib.top:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		$unit_0x67f934e9
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.alu:sv <0x646b6097>
+			streams:   4, words:  2185
+		worklib.alu_interface:sv <0x78d99f37>
+			streams: 908, words: 1624528
+		worklib.cdns_uvm_pkg:sv <0x63f1400f>
+			streams: 183, words: 393706
+		worklib.cdns_uvmapi:svp <0x5ab7d70c>
+			streams:  27, words: 46418
+		worklib.cdns_assert2uvm_pkg:sv <0x13632f17>
+			streams:   3, words:  3144
+		worklib.uvm_pkg:sv <0x68b094c9>
+			streams: 5407, words: 12202663
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                        Instances  Unique
+		Modules:                        2       2
+		Interfaces:                     1       1
+		Verilog packages:               4       4
+		Registers:                 14,419  10,391
+		Scalar wires:                   6       -
+		Vectored wires:                 5       -
+		Named events:                   4      12
+		Always blocks:                  2       2
+		Initial blocks:               315     167
+		Clocking blocks:                2       2
+		Clocking items:                 8       8
+		Parallel blocks:               26      27
+		Pseudo assignments:             7       -
+		Assertions:                    11      11
+		Covergroup Instances:           0       1
+		Compilation units:              1       1
+		SV Class declarations:        209     322
+		SV Class specializations:     403     403
+		Process Clocks:                 1       1
+	Writing initial simulation snapshot: worklib.top:sv
+	Parallel LWD Data Generation
+	Generating Debug Data:
+		LWD Database path: (/home/Trainee23/project/xcelium.d/worklib/top/sv/debug_db/top)
+		Power Aware Instances:                    0
+		Liberty Instances:                        0
+		Out Of Module References:               167
+		Assertions:                              11
+		Liberty Information:
+			PG Pins:	                  0
+			Liberty Pins:	                  0
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+SVSEED default: 1
+
+-------------------------------------
+Relinquished control to Verisium Debug...
+xcelium> 
+xcelium> source /usr/cadence/installs/XCELIUM2503/tools/xcelium/files/xmsimrc
+xcelium> source /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> uvm_message -stop_on_error ON
+----------------------------------------------------------------
+CDNS-UVM-1.1d (25.03-s006)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/additions/sv/cdns_tcl.svh(885) @ 0: reporter [CDNS_EXT] STOP_ON_ERROR
+UVM_WARNING @ 0: reporter [CBUNREG] Callback cdns_catcher cannot be registered with object (*) because callback type  is not registered with object type uvm_object
+xcelium> 
+xcelium> 
+xcelium> ida_probe -log=on
+xcelium> ida_probe -log=off
+xcelium> ida_probe -log=on
+xcelium> ida_probe -log=off
+xcelium> ida_probe -log=on
+xcelium> 
+
