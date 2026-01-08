@@ -7,7 +7,7 @@
 <div align="center">
   <img src="https://img.shields.io/badge/Build-Passing-brightgreen" alt="Build Status">
   <img src="https://img.shields.io/badge/Coverage-95%25-blue" alt="Coverage">
-  <img src="https://img.shields.io/github/stars/username/repo?style=social" alt="GitHub Stars">
+
 </div>
 
 ---
@@ -19,8 +19,7 @@
 - [Directory Structure](#directory-structure)
 - [Getting Started](#getting-started)
 - [Contribution Guidelines](#contribution-guidelines)
-- [Authors](#authors)
-- [License](#license)
+
 
 ---
 
@@ -32,7 +31,7 @@ It ensures functional correctness, performance, and reliability using constraine
 
 ## Features
 - **UVM Components:** Driver, Monitor, Sequencer, Scoreboard, Functional coverage, Assertions  
-- **ALU Operations:** Add, Subtract, AND, OR, XOR, Shifts, Rotates, Overflow detection  
+- **ALU Operations:** Add, Subtract, AND, OR, XOR,Overflow detection  
 - **Verification Methodology:** Constrained-random tests, Transaction-based sequences, Reference model comparison
 
 ---
