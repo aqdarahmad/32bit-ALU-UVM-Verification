@@ -16,9 +16,7 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Tools Used](#tools-used)
-- [Directory Structure](#directory-structure)
-- [Getting Started](#getting-started)
-- [Contribution Guidelines](#contribution-guidelines)
+
 
 
 ---
