@@ -1,0 +1,56 @@
+13:43:45:4345 [important] [features-3-thread-1] WARN  - InfoSource version is empty in getMajorMinorVersion()
+13:43:45:4345 [important] [features-3-thread-1] WARN  - InfoSource version not found!! skipping relevant version checks
+13:43:45:4345 [important] [features-3-thread-1] INFO  - xmsim gcc version is 12.4.0
+13:43:45:4345 [important] [features-3-thread-1] INFO  - indago gcc version is 12.4.0
+13:43:46:4346 [important] [TangoTaskManager-3] WARN  - An Indago Snapshot/LWD was not loaded. Scripting API functionality may be impacted.
+13:43:47:4347 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-5] INFO  - query: 
+13:44:03:443 [user_actions] [AWT-EventQueue-1] DEBUG - refreshSchematicAttributes (SchematicActionsManager$25)
+
+13:44:03:443 [user_actions] [AWT-EventQueue-1] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+13:44:04:444 [user_actions] [AWT-EventQueue-1] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+13:44:04:444 [user_actions] [AWT-EventQueue-1] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+13:44:46:4446 [important] [TangoTaskManager-3] WARN  - python scripts are waiting to start for 60 seconds guiReady=false simulatorReady=true consoleActiveSvc is not null consoleActiveSvc.consoleActive() =true
+13:45:46:4546 [important] [TangoTaskManager-3] WARN  - python scripts are waiting to start for 120 seconds guiReady=false simulatorReady=true consoleActiveSvc is not null consoleActiveSvc.consoleActive() =true
+13:45:48:4548 [user_actions] [AWT-EventQueue-1] DEBUG - Keep current (GUFIQuestionDialog$1)
+	dialog = restoreLayoutsDialog (GUFIQuestionDialog)
+
+13:45:48:4548 [important] [TangoTaskManager-3] INFO  - ScriptingActivator while loop has finished
+13:45:51:4551 [user_actions] [AWT-EventQueue-1] DEBUG - refreshSchematicAttributes (SchematicActionsManager$25)
+
+13:45:56:4556 [user_actions] [AWT-EventQueue-1] DEBUG - recordLogs (GSLRecordLogsAction)
+
+13:45:56:4556 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-1] INFO  - query: 
+13:45:56:4556 [com.cadence.smartlog.bl.common.SLUtils] [EventAdminAsyncThread #1] INFO  - query: 
+13:45:56:4556 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-9] INFO  - query: 
+13:46:02:462 [user_actions] [AWT-EventQueue-1] DEBUG - consoleBtn (GSLMainDebugSubActivity$8)
+
+13:46:03:463 [user_actions] [AWT-EventQueue-1] DEBUG - openRandDebuggerAction (GSLRandomizationDebuggerBox$4)
+
+13:46:03:463 [user_actions] [AWT-EventQueue-1] DEBUG - refreshSchematicAttributes (SchematicActionsManager$25)
+
+13:46:04:464 [user_actions] [AWT-EventQueue-1] DEBUG - appStoreBtn (GSLMainDebugSubActivity$9)
+
+13:46:05:465 [user_actions] [AWT-EventQueue-1] DEBUG - openRandDebuggerAction (GSLRandomizationDebuggerBox$4)
+
+13:46:07:467 [user_actions] [AWT-EventQueue-1] DEBUG - openSecondaryLpAction (GUFILaunchPane$2)
+
+13:46:09:469 [user_actions] [AWT-EventQueue-1] DEBUG - refreshSchematicAttributes (SchematicActionsManager$25)
+
+13:46:09:469 [user_actions] [AWT-EventQueue-1] DEBUG - openRandDebuggerAction (GSLRandomizationDebuggerBox$4)
+
+13:46:09:469 [user_actions] [AWT-EventQueue-1] DEBUG - refreshSchematicAttributes (SchematicActionsManager$25)
+
+13:46:11:4611 [user_actions] [AWT-EventQueue-1] DEBUG - openSecondaryLpAction (GUFILaunchPane$2)
+
+13:46:12:4612 [user_actions] [AWT-EventQueue-1] DEBUG - refreshSchematicAttributes (SchematicActionsManager$25)
+
+13:46:26:4626 [user_actions] [AWT-EventQueue-1] DEBUG - Designer (GUFIBaseActionManager$GUFIApplyPerspectiveAction)
+
+13:46:34:4634 [user_actions] [AWT-EventQueue-1] DEBUG - Interactive (GUFIBaseActionManager$GUFIApplyPerspectiveAction)
+
+13:46:44:4644 [user_actions] [AWT-EventQueue-1] DEBUG - OK (GUFIQuestionDialog$1)
+	dialog = confirmExitDlg (GUFIQuestionDialog)
+
