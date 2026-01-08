@@ -1,5 +1,0 @@
-			ida_probe -log -uvm_record_depth "10" -uvm FALSE 
-			ida_probe -log off 
-			ida_probe -log 
-			ida_probe -log off 
-			ida_probe -log 
