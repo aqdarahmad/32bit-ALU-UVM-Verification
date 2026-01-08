@@ -1,3 +1,25 @@
+
+#e1(07Jan2026:21:42:55): source ./xcelium.d/env.d/env.history.07Jan2026_21_42_55
+s1(07Jan2026:21:42:55):  xrun -gui -access +rwc -timescale 1ns/1ps -coverage all -covoverwrite design.sv 
+#e2(08Jan2026:13:39:42): source ./xcelium.d/env.d/env.history.08Jan2026_13_39_42
+s2(08Jan2026:13:39:42):  xrun -gui -access +rwc -timescale 1ns/1ps -coverage all -covoverwrite design.sv testbench.sv 
+#e3(08Jan2026:13:40:26): source ./xcelium.d/env.d/env.history.08Jan2026_13_40_26
+s3(08Jan2026:13:40:26):  xrun -sv -uvm -access +rw alu_random_test.sv -debug_opts verisium_interactive 
+#e4(08Jan2026:13:43:28): source ./xcelium.d/env.d/env.history.08Jan2026_13_43_28
+s4(08Jan2026:13:43:28):  xrun -sv -uvm design.sv testbench.sv -debug_opts verisium_interactive 
+#e5(08Jan2026:13:47:39): source ./xcelium.d/env.d/env.history.08Jan2026_13_47_39
+s5(08Jan2026:13:47:39):  xrun -sv -uvm alu_random_test.sv -debug_opts verisium_interactive 
+#e6(08Jan2026:13:47:48): source ./xcelium.d/env.d/env.history.08Jan2026_13_47_48
+s6(08Jan2026:13:47:48):  xrun -sv -uvm alu_random_test.sv 
+#e7(08Jan2026:13:47:57): source ./xcelium.d/env.d/env.history.08Jan2026_13_47_57
+s7(08Jan2026:13:47:57):  xrun -sv alu_random_test.sv 
+#e8(08Jan2026:13:48:29): source ./xcelium.d/env.d/env.history.08Jan2026_13_48_29
+s8(08Jan2026:13:48:29):  xrun -sv -uvm design.sv alu_random_test.sv -debug_opts verisium_interactive 
+#e9(08Jan2026:13:49:21): source ./xcelium.d/env.d/env.history.08Jan2026_13_49_21
+s9(08Jan2026:13:49:21):  xrun -sv -uvm +incdir+. design.sv testbench.sv +UVM_TESTNAME=alu_random_test 
+#e10(08Jan2026:13:50:04): source ./xcelium.d/env.d/env.history.08Jan2026_13_50_04
+s10(08Jan2026:13:50:04):  xrun -sv -uvm +incdir+. design.sv testbench.sv +UVM_TESTNAME=alu_random_test -debug_opts verisium_interactive 
+
 #e1(21Oct2025:17:52:16): source ./xcelium.d/env.d/env.history.21Oct2025_17_52_16
 s1(21Oct2025:17:52:16):  xrun -sv -uvm -access +rw alu_interface.sv alu.sv alu_sequence_item.sv alu_driver.sv alu_sequencer.sv alu_monitor.sv alu_subscriber.sv alu_scoreboard.sv alu_agent.sv alu_environment.sv alu_random_test.sv testbench.sv -debug_opts verisium_interactive 
 #e2(21Oct2025:17:56:25): source ./xcelium.d/env.d/env.history.21Oct2025_17_56_25
@@ -64,3 +86,4 @@ s31(07Jan2026:20:43:14):  xrun -sv -uvm design.sv testbench.sv -obts verisuim_in
 s32(07Jan2026:20:43:28):  xrun -sv -uvm design.sv testbench.sv -opts verisuim_interactive 
 #e33(07Jan2026:20:46:05): source ./xcelium.d/env.d/env.history.07Jan2026_20_46_05
 s33(07Jan2026:20:46:05):  xrun -sv -uvm design.sv testbench.sv -debug_opts verisium_interactive 
+

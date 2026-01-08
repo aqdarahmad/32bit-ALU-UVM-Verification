@@ -1,0 +1,2 @@
+statement aborts at 1: [COMMIT;] cannot commit transaction - SQL statements in progress5
+abort at 9 in [INSERT INTO verbosities (num_val,verbosity) VALUES (?, ?)]: UNIQUE constraint failed: verbosities.num_val1555

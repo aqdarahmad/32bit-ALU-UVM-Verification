@@ -1,10 +1,20 @@
 xrun(64): 25.03-s006: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+
+TOOL:	xrun(64)	25.03-s006: Started on Jan 08, 2026 at 13:51:34 EET
+
 TOOL:	xrun(64)	25.03-s006: Started on Jan 07, 2026 at 20:46:04 EET
+
 xrun
 	-sv
 	-uvm
+	-access +rw
+	+incdir+.
 	design.sv
 	testbench.sv
+
+	+UVM_TESTNAME=alu_random_test
+
+
 	-debug_opts verisium_interactive
 		-source_debug
 		-lwdgen
@@ -15,6 +25,12 @@ xrun
 		-ext_src_info
 		-ext_macro_src_info
 		-disable_xform
+
+xrun: *W,WKWTLK: Waiting for a Exclusive lock on file '/home/Trainee23/project/xcelium.d/run.lnx8664.25.03.d/.xmlib.lock'. pid:2944284.
+
+Additional info:
+TOOL:	xrun(64)	25.03-s006 (CL: 809911 ), orionvtech, Linux 4.18.0-553.16.1.el8_10.x86_64 #1 SMP Thu Aug 8 07:11:46 EDT 2024 x86_64
+
 Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d
 file: design.sv
 	module worklib.alu:sv
@@ -125,3 +141,4 @@ xcelium> ida_probe -log=on
 xcelium> ida_probe -log=off
 xcelium> ida_probe -log=on
 xcelium> 
+

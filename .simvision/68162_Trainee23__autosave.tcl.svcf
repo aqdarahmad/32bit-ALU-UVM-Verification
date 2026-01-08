@@ -1,0 +1,346 @@
+
+#
+# Preferences
+#
+preferences set toolbar-Standard-WatchWindow {
+  usual
+  shown 0
+}
+preferences set exportdlg-sst2Seqt 1
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set cursorctl-dont-show-sync-warning 1
+preferences set toolbar-Windows-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-sendToIndago-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Standard-Console {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Search-Console {
+  usual
+  position -pos 2
+}
+preferences set exportdlg-sst2Compress 1
+preferences set plugin-enable-groupscope 0
+preferences set standard-methodology-filtering 1
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+preferences set toolbar-SimControl-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-TimeSearch-WatchWindow {
+  usual
+  shown 0
+}
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Design Browser windows
+#
+if {[catch {window new WatchList -name "Design Browser 1" -geometry 1536x793+0+23}] != ""} {
+    window geometry "Design Browser 1" 1536x793+0+23
+}
+window target "Design Browser 1" on
+browser using {Design Browser 1}
+browser set -scope  simulator::top.dut 
+browser set \
+    -signalsort name
+browser yview see  simulator::top.dut 
+browser timecontrol set -lock 0
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1010x600+0+0}] != ""} {
+    window geometry "Waveform 1" 1010x600+0+0
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar visibility partial
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ps \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	{simulator::top.dut.A[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::top.dut.A[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::top.dut.A[31:0]}
+	} ]
+
+waveform xview limits 10100000ps 10102000ps
+
+#
+# Waveform Window Links
+#
+
+#
+# Schematic Tracer windows
+#
+if {[catch {window new SchematicWindow -name "Schematic Tracer 1" -geometry 1536x793+0+23}] != ""} {
+    window geometry "Schematic Tracer 1" 1536x793+0+23
+}
+window target "Schematic Tracer 1" on
+schematic using "Schematic Tracer 1"
+schematic sidebar visibility partial
+schematic set \
+    -radix default \
+    -fullsignalname 0 \
+    -showvalue 1 \
+    -showstrength 0 \
+    -showgrey 0 \
+    -tracemode Single \
+    -showrtl 1 \
+    -showcells 1 \
+    -showcellpins 0
+schematic timecontrol set -lock 0
+schematic restore -state {# String saved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=TK:8.4 tclcompat
+#  -string
+# non-default properties - (restore without -noprops)
+property -colorscheme classic
+property attrcolor #40e0d0
+property attrfontsize 10
+property boxcolor14 #ff7ca9
+property boxmaxwidth 400
+property boxmingap 40
+property boxminheight 40
+property boxminwidth 100
+property buscolor #00ff00
+property createnetattrdsp 2
+property fillcolor1 #000000
+property fillcolor2 #000000
+property gatecellname 1
+property netcolor #00ff00
+property objecthighlight0 #ff00aa
+property objecthighlight1 #ff00aa
+property objecthighlight2 #00ff00
+property objecthighlight3 #ffff00
+property objecthighlight9 #ffffaf
+property pinattrmax 200
+property selectionappearance 2
+property selectioncolor #ffffaf
+property sheetheight 0
+property sheetwidth 0
+property showhierpinname 1
+property showinvisibles 1
+property showmarks 1
+property showpgtype 1
+#
+module new module {}
+load symbol DAI_SOURCE_IN {} DEF port 0 input -loc -14 0 0 0 pinattrdsp @name -cr -2 -5 8i attrdsp @cell -ll -10 16 10 path 0 -6 9 -6 12 -3 12 6 0 6 0 -6 path 12 -3 9 -3 9 -6 path 2 -3 6 -3 path 2 0 10 0 path 2 3 10 3
+load symbol DAI_SOURCE_OUT {} DEF port 0 output -loc 26 0 12 0 pinattrdsp @name -cl 30 -5 8i attrdsp @cell -ll -10 16 10 path 0 -6 9 -6 12 -3 12 6 0 6 0 -6 path 12 -3 9 -3 9 -6 path 2 -3 6 -3 path 2 0 10 0 path 2 3 10 3
+#
+module new root {} -nosplit -symlib /usr/cadence/installs/XCELIUM2503/tools/dvgui/ams/symlib/analogLib.sym
+load symbol {alu worklib(sv)} {} HIERBOX pin 0 input.left pin 1 input.left pin 101 output.right pinBus 0 input.left 32 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 pinBus 1 input.left 32 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 pinBus 2 input.left 3 66 67 68 pinBus 3 output.right 32 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 fillcolor 2
+load symbol rtl_Always_comb_0 {} GEN pin 32 output.right pin 100 input.left pin 101 input.left pin 102 input.left pin 103 input.left pinBus 0 output.right 32 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 pinBus 1 input.left 3 33 34 35 pinBus 2 input.left 32 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 pinBus 3 input.left 32 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 fillcolor 1 attrdsp @name -lc 110 -82 12
+load symbol rtl_FlipFlop_2 {} GEN pin 0 input.left pin 1 input.clk.left pin 2 input.bot pin 3 output.right fillcolor 1 attrdsp @name -lc 50 -32 12
+load symbol rtl_FlipFlop_1 {} GEN pin 32 input.clk.left pin 33 input.bot pinBus 0 input.left 32 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 pinBus 1 output.right 32 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 fillcolor 1 attrdsp @name -lc 50 -32 12
+load inst simulator::top,dut {alu worklib(sv)} {} -attr @name dut -attr @color #00ffff -pinAttr 0 @name clk= -pinAttr 0 @color #ffffff -pinAttr 1 @name rst= -pinAttr 1 @color #ffffff -pinAttr 101 @name Error= -pinAttr 101 @color #ffffff -pinBusAttr 0 @name {A[31:0]=} -pinBusAttr 0 @color #ffffff -pinBusAttr 1 @name {B[31:0]=} -pinBusAttr 1 @color #ffffff -pinBusAttr 2 @name {Opcode[2:0]=} -pinBusAttr 2 @color #ffffff -pinBusAttr 3 @name {Result[31:0]=} -pinBusAttr 3 @color #ffffff -hierPinAttr 0 @name clk -hierPinAttr 1 @name rst -hierPinAttr 101 @name Error -hierPinBusAttr 0 @name {A[31:0]} -hierPinBusAttr 1 @name {B[31:0]} -hierPinBusAttr 2 @name {Opcode[2:0]} -hierPinBusAttr 3 @name {Result[31:0]} -pg 1 -lvl 1 -x 80 -y 30
+load inst simulator::top,dut,Always_comb_0 rtl_Always_comb_0 {} -hier simulator::top,dut -attr @name Always_comb_0 -attr @cell {} -attr @color #00ff00 -pinAttr 32 @name error_next= -pinAttr 32 @color #ffffff -pinAttr 100 @name {A[31]=} -pinAttr 100 @color #ffffff -pinAttr 101 @name {B[31]=} -pinAttr 101 @color #ffffff -pinAttr 102 @name {result_next[31]=} -pinAttr 102 @color #ffffff -pinAttr 103 @name rst= -pinAttr 103 @color #ffffff -pinBusAttr 0 @name {result_next[31:0]=} -pinBusAttr 0 @color #ffffff -pinBusAttr 1 @name {Opcode[2:0]=} -pinBusAttr 1 @color #ffffff -pinBusAttr 2 @name {A[31:0]=} -pinBusAttr 2 @color #ffffff -pinBusAttr 3 @name {B[31:0]=} -pinBusAttr 3 @color #ffffff -pg 1 -lvl 1 -x 260 -y 200
+load inst simulator::top,dut,FlipFlop_1 rtl_FlipFlop_2 {} -hier simulator::top,dut -attr @name FlipFlop_1 -attr @cell {} -attr @color #00ff00 -pinAttr 0 @name D -pinAttr 0 @attr error_next= -pinAttr 1 @name CLOCK -pinAttr 1 @attr clk= -pinAttr 2 @name RESET -pinAttr 2 @attr rst= -pinAttr 3 @name Q -pinAttr 3 @attr Error= -pg 1 -lvl 2 -x 690 -y 70
+load inst simulator::top,dut,FlipFlop_0 rtl_FlipFlop_1 {} -hier simulator::top,dut -attr @name FlipFlop_0 -attr @cell {} -attr @color #00ff00 -pinAttr 32 @name CLOCK -pinAttr 32 @attr clk= -pinAttr 33 @name RESET -pinAttr 33 @attr rst= -pinBusAttr 0 @name D -pinBusAttr 0 @attr {result_next[31:0]=} -pinBusAttr 1 @name Q -pinBusAttr 1 @attr {Result[31:0]=} -pg 1 -lvl 2 -x 690 -y 200
+load net {simulator::top,dut,A[31]} -attr @name {A[31]} -attr @color #666666.1 -hierPin simulator::top,dut 2 -pin simulator::top,dut,Always_comb_0 100 -pin simulator::top,dut,Always_comb_0 36
+load net {simulator::top,dut,A[30]} -attr @name {A[30]} -attr @color #666666.1 -hierPin simulator::top,dut 3 -pin simulator::top,dut,Always_comb_0 37
+load net {simulator::top,dut,A[29]} -attr @name {A[29]} -attr @color #666666.1 -hierPin simulator::top,dut 4 -pin simulator::top,dut,Always_comb_0 38
+load net {simulator::top,dut,A[28]} -attr @name {A[28]} -attr @color #666666.1 -hierPin simulator::top,dut 5 -pin simulator::top,dut,Always_comb_0 39
+load net {simulator::top,dut,A[27]} -attr @name {A[27]} -attr @color #666666.1 -hierPin simulator::top,dut 6 -pin simulator::top,dut,Always_comb_0 40
+load net {simulator::top,dut,A[26]} -attr @name {A[26]} -attr @color #666666.1 -hierPin simulator::top,dut 7 -pin simulator::top,dut,Always_comb_0 41
+load net {simulator::top,dut,A[25]} -attr @name {A[25]} -attr @color #666666.1 -hierPin simulator::top,dut 8 -pin simulator::top,dut,Always_comb_0 42
+load net {simulator::top,dut,A[24]} -attr @name {A[24]} -attr @color #666666.1 -hierPin simulator::top,dut 9 -pin simulator::top,dut,Always_comb_0 43
+load net {simulator::top,dut,A[23]} -attr @name {A[23]} -attr @color #666666.1 -hierPin simulator::top,dut 10 -pin simulator::top,dut,Always_comb_0 44
+load net {simulator::top,dut,A[22]} -attr @name {A[22]} -attr @color #666666.1 -hierPin simulator::top,dut 11 -pin simulator::top,dut,Always_comb_0 45
+load net {simulator::top,dut,A[21]} -attr @name {A[21]} -attr @color #666666.1 -hierPin simulator::top,dut 12 -pin simulator::top,dut,Always_comb_0 46
+load net {simulator::top,dut,A[20]} -attr @name {A[20]} -attr @color #666666.1 -hierPin simulator::top,dut 13 -pin simulator::top,dut,Always_comb_0 47
+load net {simulator::top,dut,A[19]} -attr @name {A[19]} -attr @color #666666.1 -hierPin simulator::top,dut 14 -pin simulator::top,dut,Always_comb_0 48
+load net {simulator::top,dut,A[18]} -attr @name {A[18]} -attr @color #666666.1 -hierPin simulator::top,dut 15 -pin simulator::top,dut,Always_comb_0 49
+load net {simulator::top,dut,A[17]} -attr @name {A[17]} -attr @color #666666.1 -hierPin simulator::top,dut 16 -pin simulator::top,dut,Always_comb_0 50
+load net {simulator::top,dut,A[16]} -attr @name {A[16]} -attr @color #666666.1 -hierPin simulator::top,dut 17 -pin simulator::top,dut,Always_comb_0 51
+load net {simulator::top,dut,A[15]} -attr @name {A[15]} -attr @color #666666.1 -hierPin simulator::top,dut 18 -pin simulator::top,dut,Always_comb_0 52
+load net {simulator::top,dut,A[14]} -attr @name {A[14]} -attr @color #666666.1 -hierPin simulator::top,dut 19 -pin simulator::top,dut,Always_comb_0 53
+load net {simulator::top,dut,A[13]} -attr @name {A[13]} -attr @color #666666.1 -hierPin simulator::top,dut 20 -pin simulator::top,dut,Always_comb_0 54
+load net {simulator::top,dut,A[12]} -attr @name {A[12]} -attr @color #666666.1 -hierPin simulator::top,dut 21 -pin simulator::top,dut,Always_comb_0 55
+load net {simulator::top,dut,A[11]} -attr @name {A[11]} -attr @color #666666.1 -hierPin simulator::top,dut 22 -pin simulator::top,dut,Always_comb_0 56
+load net {simulator::top,dut,A[10]} -attr @name {A[10]} -attr @color #666666.1 -hierPin simulator::top,dut 23 -pin simulator::top,dut,Always_comb_0 57
+load net {simulator::top,dut,A[9]} -attr @name {A[9]} -attr @color #666666.1 -hierPin simulator::top,dut 24 -pin simulator::top,dut,Always_comb_0 58
+load net {simulator::top,dut,A[8]} -attr @name {A[8]} -attr @color #666666.1 -hierPin simulator::top,dut 25 -pin simulator::top,dut,Always_comb_0 59
+load net {simulator::top,dut,A[7]} -attr @name {A[7]} -attr @color #666666.1 -hierPin simulator::top,dut 26 -pin simulator::top,dut,Always_comb_0 60
+load net {simulator::top,dut,A[6]} -attr @name {A[6]} -attr @color #666666.1 -hierPin simulator::top,dut 27 -pin simulator::top,dut,Always_comb_0 61
+load net {simulator::top,dut,A[5]} -attr @name {A[5]} -attr @color #666666.1 -hierPin simulator::top,dut 28 -pin simulator::top,dut,Always_comb_0 62
+load net {simulator::top,dut,A[4]} -attr @name {A[4]} -attr @color #666666.1 -hierPin simulator::top,dut 29 -pin simulator::top,dut,Always_comb_0 63
+load net {simulator::top,dut,A[3]} -attr @name {A[3]} -attr @color #666666.1 -hierPin simulator::top,dut 30 -pin simulator::top,dut,Always_comb_0 64
+load net {simulator::top,dut,A[2]} -attr @name {A[2]} -attr @color #666666.1 -hierPin simulator::top,dut 31 -pin simulator::top,dut,Always_comb_0 65
+load net {simulator::top,dut,A[1]} -attr @name {A[1]} -attr @color #666666.1 -hierPin simulator::top,dut 32 -pin simulator::top,dut,Always_comb_0 66
+load net {simulator::top,dut,A[0]} -attr @name {A[0]} -attr @color #666666.1 -hierPin simulator::top,dut 33 -pin simulator::top,dut,Always_comb_0 67
+load net {simulator::top,dut,B[31]} -attr @name {B[31]} -attr @color #666666.1 -hierPin simulator::top,dut 34 -pin simulator::top,dut,Always_comb_0 101 -pin simulator::top,dut,Always_comb_0 68
+load net {simulator::top,dut,B[30]} -attr @name {B[30]} -attr @color #666666.1 -hierPin simulator::top,dut 35 -pin simulator::top,dut,Always_comb_0 69
+load net {simulator::top,dut,B[29]} -attr @name {B[29]} -attr @color #666666.1 -hierPin simulator::top,dut 36 -pin simulator::top,dut,Always_comb_0 70
+load net {simulator::top,dut,B[28]} -attr @name {B[28]} -attr @color #666666.1 -hierPin simulator::top,dut 37 -pin simulator::top,dut,Always_comb_0 71
+load net {simulator::top,dut,B[27]} -attr @name {B[27]} -attr @color #666666.1 -hierPin simulator::top,dut 38 -pin simulator::top,dut,Always_comb_0 72
+load net {simulator::top,dut,B[26]} -attr @name {B[26]} -attr @color #666666.1 -hierPin simulator::top,dut 39 -pin simulator::top,dut,Always_comb_0 73
+load net {simulator::top,dut,B[25]} -attr @name {B[25]} -attr @color #666666.1 -hierPin simulator::top,dut 40 -pin simulator::top,dut,Always_comb_0 74
+load net {simulator::top,dut,B[24]} -attr @name {B[24]} -attr @color #666666.1 -hierPin simulator::top,dut 41 -pin simulator::top,dut,Always_comb_0 75
+load net {simulator::top,dut,B[23]} -attr @name {B[23]} -attr @color #666666.1 -hierPin simulator::top,dut 42 -pin simulator::top,dut,Always_comb_0 76
+load net {simulator::top,dut,B[22]} -attr @name {B[22]} -attr @color #666666.1 -hierPin simulator::top,dut 43 -pin simulator::top,dut,Always_comb_0 77
+load net {simulator::top,dut,B[21]} -attr @name {B[21]} -attr @color #666666.1 -hierPin simulator::top,dut 44 -pin simulator::top,dut,Always_comb_0 78
+load net {simulator::top,dut,B[20]} -attr @name {B[20]} -attr @color #666666.1 -hierPin simulator::top,dut 45 -pin simulator::top,dut,Always_comb_0 79
+load net {simulator::top,dut,B[19]} -attr @name {B[19]} -attr @color #666666.1 -hierPin simulator::top,dut 46 -pin simulator::top,dut,Always_comb_0 80
+load net {simulator::top,dut,B[18]} -attr @name {B[18]} -attr @color #666666.1 -hierPin simulator::top,dut 47 -pin simulator::top,dut,Always_comb_0 81
+load net {simulator::top,dut,B[17]} -attr @name {B[17]} -attr @color #666666.1 -hierPin simulator::top,dut 48 -pin simulator::top,dut,Always_comb_0 82
+load net {simulator::top,dut,B[16]} -attr @name {B[16]} -attr @color #666666.1 -hierPin simulator::top,dut 49 -pin simulator::top,dut,Always_comb_0 83
+load net {simulator::top,dut,B[15]} -attr @name {B[15]} -attr @color #666666.1 -hierPin simulator::top,dut 50 -pin simulator::top,dut,Always_comb_0 84
+load net {simulator::top,dut,B[14]} -attr @name {B[14]} -attr @color #666666.1 -hierPin simulator::top,dut 51 -pin simulator::top,dut,Always_comb_0 85
+load net {simulator::top,dut,B[13]} -attr @name {B[13]} -attr @color #666666.1 -hierPin simulator::top,dut 52 -pin simulator::top,dut,Always_comb_0 86
+load net {simulator::top,dut,B[12]} -attr @name {B[12]} -attr @color #666666.1 -hierPin simulator::top,dut 53 -pin simulator::top,dut,Always_comb_0 87
+load net {simulator::top,dut,B[11]} -attr @name {B[11]} -attr @color #666666.1 -hierPin simulator::top,dut 54 -pin simulator::top,dut,Always_comb_0 88
+load net {simulator::top,dut,B[10]} -attr @name {B[10]} -attr @color #666666.1 -hierPin simulator::top,dut 55 -pin simulator::top,dut,Always_comb_0 89
+load net {simulator::top,dut,B[9]} -attr @name {B[9]} -attr @color #666666.1 -hierPin simulator::top,dut 56 -pin simulator::top,dut,Always_comb_0 90
+load net {simulator::top,dut,B[8]} -attr @name {B[8]} -attr @color #666666.1 -hierPin simulator::top,dut 57 -pin simulator::top,dut,Always_comb_0 91
+load net {simulator::top,dut,B[7]} -attr @name {B[7]} -attr @color #666666.1 -hierPin simulator::top,dut 58 -pin simulator::top,dut,Always_comb_0 92
+load net {simulator::top,dut,B[6]} -attr @name {B[6]} -attr @color #666666.1 -hierPin simulator::top,dut 59 -pin simulator::top,dut,Always_comb_0 93
+load net {simulator::top,dut,B[5]} -attr @name {B[5]} -attr @color #666666.1 -hierPin simulator::top,dut 60 -pin simulator::top,dut,Always_comb_0 94
+load net {simulator::top,dut,B[4]} -attr @name {B[4]} -attr @color #666666.1 -hierPin simulator::top,dut 61 -pin simulator::top,dut,Always_comb_0 95
+load net {simulator::top,dut,B[3]} -attr @name {B[3]} -attr @color #666666.1 -hierPin simulator::top,dut 62 -pin simulator::top,dut,Always_comb_0 96
+load net {simulator::top,dut,B[2]} -attr @name {B[2]} -attr @color #666666.1 -hierPin simulator::top,dut 63 -pin simulator::top,dut,Always_comb_0 97
+load net {simulator::top,dut,B[1]} -attr @name {B[1]} -attr @color #666666.1 -hierPin simulator::top,dut 64 -pin simulator::top,dut,Always_comb_0 98
+load net {simulator::top,dut,B[0]} -attr @name {B[0]} -attr @color #666666.1 -hierPin simulator::top,dut 65 -pin simulator::top,dut,Always_comb_0 99
+load net simulator::top,dut,Error -attr @name Error -attr @color #666666.1 -hierPin simulator::top,dut 101 -pin simulator::top,dut,FlipFlop_1 3
+netloc simulator::top,dut,Error 1 2 1 NJ 70
+load net {simulator::top,dut,Opcode[2]} -attr @name {Opcode[2]} -attr @color #666666.1 -hierPin simulator::top,dut 66 -pin simulator::top,dut,Always_comb_0 33
+load net {simulator::top,dut,Opcode[1]} -attr @name {Opcode[1]} -attr @color #666666.1 -hierPin simulator::top,dut 67 -pin simulator::top,dut,Always_comb_0 34
+load net {simulator::top,dut,Opcode[0]} -attr @name {Opcode[0]} -attr @color #666666.1 -hierPin simulator::top,dut 68 -pin simulator::top,dut,Always_comb_0 35
+load net {simulator::top,dut,Result[31]} -attr @name {Result[31]} -attr @color #666666.1 -hierPin simulator::top,dut 69 -pin simulator::top,dut,FlipFlop_0 34
+load net {simulator::top,dut,Result[30]} -attr @name {Result[30]} -attr @color #666666.1 -hierPin simulator::top,dut 70 -pin simulator::top,dut,FlipFlop_0 35
+load net {simulator::top,dut,Result[29]} -attr @name {Result[29]} -attr @color #666666.1 -hierPin simulator::top,dut 71 -pin simulator::top,dut,FlipFlop_0 36
+load net {simulator::top,dut,Result[28]} -attr @name {Result[28]} -attr @color #666666.1 -hierPin simulator::top,dut 72 -pin simulator::top,dut,FlipFlop_0 37
+load net {simulator::top,dut,Result[27]} -attr @name {Result[27]} -attr @color #666666.1 -hierPin simulator::top,dut 73 -pin simulator::top,dut,FlipFlop_0 38
+load net {simulator::top,dut,Result[26]} -attr @name {Result[26]} -attr @color #666666.1 -hierPin simulator::top,dut 74 -pin simulator::top,dut,FlipFlop_0 39
+load net {simulator::top,dut,Result[25]} -attr @name {Result[25]} -attr @color #666666.1 -hierPin simulator::top,dut 75 -pin simulator::top,dut,FlipFlop_0 40
+load net {simulator::top,dut,Result[24]} -attr @name {Result[24]} -attr @color #666666.1 -hierPin simulator::top,dut 76 -pin simulator::top,dut,FlipFlop_0 41
+load net {simulator::top,dut,Result[23]} -attr @name {Result[23]} -attr @color #666666.1 -hierPin simulator::top,dut 77 -pin simulator::top,dut,FlipFlop_0 42
+load net {simulator::top,dut,Result[22]} -attr @name {Result[22]} -attr @color #666666.1 -hierPin simulator::top,dut 78 -pin simulator::top,dut,FlipFlop_0 43
+load net {simulator::top,dut,Result[21]} -attr @name {Result[21]} -attr @color #666666.1 -hierPin simulator::top,dut 79 -pin simulator::top,dut,FlipFlop_0 44
+load net {simulator::top,dut,Result[20]} -attr @name {Result[20]} -attr @color #666666.1 -hierPin simulator::top,dut 80 -pin simulator::top,dut,FlipFlop_0 45
+load net {simulator::top,dut,Result[19]} -attr @name {Result[19]} -attr @color #666666.1 -hierPin simulator::top,dut 81 -pin simulator::top,dut,FlipFlop_0 46
+load net {simulator::top,dut,Result[18]} -attr @name {Result[18]} -attr @color #666666.1 -hierPin simulator::top,dut 82 -pin simulator::top,dut,FlipFlop_0 47
+load net {simulator::top,dut,Result[17]} -attr @name {Result[17]} -attr @color #666666.1 -hierPin simulator::top,dut 83 -pin simulator::top,dut,FlipFlop_0 48
+load net {simulator::top,dut,Result[16]} -attr @name {Result[16]} -attr @color #666666.1 -hierPin simulator::top,dut 84 -pin simulator::top,dut,FlipFlop_0 49
+load net {simulator::top,dut,Result[15]} -attr @name {Result[15]} -attr @color #666666.1 -hierPin simulator::top,dut 85 -pin simulator::top,dut,FlipFlop_0 50
+load net {simulator::top,dut,Result[14]} -attr @name {Result[14]} -attr @color #666666.1 -hierPin simulator::top,dut 86 -pin simulator::top,dut,FlipFlop_0 51
+load net {simulator::top,dut,Result[13]} -attr @name {Result[13]} -attr @color #666666.1 -hierPin simulator::top,dut 87 -pin simulator::top,dut,FlipFlop_0 52
+load net {simulator::top,dut,Result[12]} -attr @name {Result[12]} -attr @color #666666.1 -hierPin simulator::top,dut 88 -pin simulator::top,dut,FlipFlop_0 53
+load net {simulator::top,dut,Result[11]} -attr @name {Result[11]} -attr @color #666666.1 -hierPin simulator::top,dut 89 -pin simulator::top,dut,FlipFlop_0 54
+load net {simulator::top,dut,Result[10]} -attr @name {Result[10]} -attr @color #666666.1 -hierPin simulator::top,dut 90 -pin simulator::top,dut,FlipFlop_0 55
+load net {simulator::top,dut,Result[9]} -attr @name {Result[9]} -attr @color #666666.1 -hierPin simulator::top,dut 91 -pin simulator::top,dut,FlipFlop_0 56
+load net {simulator::top,dut,Result[8]} -attr @name {Result[8]} -attr @color #666666.1 -hierPin simulator::top,dut 92 -pin simulator::top,dut,FlipFlop_0 57
+load net {simulator::top,dut,Result[7]} -attr @name {Result[7]} -attr @color #666666.1 -hierPin simulator::top,dut 93 -pin simulator::top,dut,FlipFlop_0 58
+load net {simulator::top,dut,Result[6]} -attr @name {Result[6]} -attr @color #666666.1 -hierPin simulator::top,dut 94 -pin simulator::top,dut,FlipFlop_0 59
+load net {simulator::top,dut,Result[5]} -attr @name {Result[5]} -attr @color #666666.1 -hierPin simulator::top,dut 95 -pin simulator::top,dut,FlipFlop_0 60
+load net {simulator::top,dut,Result[4]} -attr @name {Result[4]} -attr @color #666666.1 -hierPin simulator::top,dut 96 -pin simulator::top,dut,FlipFlop_0 61
+load net {simulator::top,dut,Result[3]} -attr @name {Result[3]} -attr @color #666666.1 -hierPin simulator::top,dut 97 -pin simulator::top,dut,FlipFlop_0 62
+load net {simulator::top,dut,Result[2]} -attr @name {Result[2]} -attr @color #666666.1 -hierPin simulator::top,dut 98 -pin simulator::top,dut,FlipFlop_0 63
+load net {simulator::top,dut,Result[1]} -attr @name {Result[1]} -attr @color #666666.1 -hierPin simulator::top,dut 99 -pin simulator::top,dut,FlipFlop_0 64
+load net {simulator::top,dut,Result[0]} -attr @name {Result[0]} -attr @color #666666.1 -hierPin simulator::top,dut 100 -pin simulator::top,dut,FlipFlop_0 65
+load net simulator::top,dut,clk -attr @name clk -attr @color #666666.1 -hierPin simulator::top,dut 0 -pin simulator::top,dut,FlipFlop_0 32 -pin simulator::top,dut,FlipFlop_1 1
+netloc simulator::top,dut,clk 1 0 2 NJ 50 550
+load net simulator::top,dut,error_next -attr @name error_next -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 32 -pin simulator::top,dut,FlipFlop_1 0
+netloc simulator::top,dut,error_next 1 1 1 570 60n
+load net {simulator::top,dut,result_next[31]} -attr @name {result_next[31]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 102 -pin simulator::top,dut,Always_comb_0 0 -pin simulator::top,dut,FlipFlop_0 0
+load net {simulator::top,dut,result_next[30]} -attr @name {result_next[30]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 1 -pin simulator::top,dut,FlipFlop_0 1
+load net {simulator::top,dut,result_next[29]} -attr @name {result_next[29]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 2 -pin simulator::top,dut,FlipFlop_0 2
+load net {simulator::top,dut,result_next[28]} -attr @name {result_next[28]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 3 -pin simulator::top,dut,FlipFlop_0 3
+load net {simulator::top,dut,result_next[27]} -attr @name {result_next[27]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 4 -pin simulator::top,dut,FlipFlop_0 4
+load net {simulator::top,dut,result_next[26]} -attr @name {result_next[26]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 5 -pin simulator::top,dut,FlipFlop_0 5
+load net {simulator::top,dut,result_next[25]} -attr @name {result_next[25]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 6 -pin simulator::top,dut,FlipFlop_0 6
+load net {simulator::top,dut,result_next[24]} -attr @name {result_next[24]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 7 -pin simulator::top,dut,FlipFlop_0 7
+load net {simulator::top,dut,result_next[23]} -attr @name {result_next[23]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 8 -pin simulator::top,dut,FlipFlop_0 8
+load net {simulator::top,dut,result_next[22]} -attr @name {result_next[22]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 9 -pin simulator::top,dut,FlipFlop_0 9
+load net {simulator::top,dut,result_next[21]} -attr @name {result_next[21]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 10 -pin simulator::top,dut,FlipFlop_0 10
+load net {simulator::top,dut,result_next[20]} -attr @name {result_next[20]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 11 -pin simulator::top,dut,FlipFlop_0 11
+load net {simulator::top,dut,result_next[19]} -attr @name {result_next[19]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 12 -pin simulator::top,dut,FlipFlop_0 12
+load net {simulator::top,dut,result_next[18]} -attr @name {result_next[18]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 13 -pin simulator::top,dut,FlipFlop_0 13
+load net {simulator::top,dut,result_next[17]} -attr @name {result_next[17]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 14 -pin simulator::top,dut,FlipFlop_0 14
+load net {simulator::top,dut,result_next[16]} -attr @name {result_next[16]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 15 -pin simulator::top,dut,FlipFlop_0 15
+load net {simulator::top,dut,result_next[15]} -attr @name {result_next[15]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 16 -pin simulator::top,dut,FlipFlop_0 16
+load net {simulator::top,dut,result_next[14]} -attr @name {result_next[14]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 17 -pin simulator::top,dut,FlipFlop_0 17
+load net {simulator::top,dut,result_next[13]} -attr @name {result_next[13]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 18 -pin simulator::top,dut,FlipFlop_0 18
+load net {simulator::top,dut,result_next[12]} -attr @name {result_next[12]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 19 -pin simulator::top,dut,FlipFlop_0 19
+load net {simulator::top,dut,result_next[11]} -attr @name {result_next[11]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 20 -pin simulator::top,dut,FlipFlop_0 20
+load net {simulator::top,dut,result_next[10]} -attr @name {result_next[10]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 21 -pin simulator::top,dut,FlipFlop_0 21
+load net {simulator::top,dut,result_next[9]} -attr @name {result_next[9]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 22 -pin simulator::top,dut,FlipFlop_0 22
+load net {simulator::top,dut,result_next[8]} -attr @name {result_next[8]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 23 -pin simulator::top,dut,FlipFlop_0 23
+load net {simulator::top,dut,result_next[7]} -attr @name {result_next[7]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 24 -pin simulator::top,dut,FlipFlop_0 24
+load net {simulator::top,dut,result_next[6]} -attr @name {result_next[6]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 25 -pin simulator::top,dut,FlipFlop_0 25
+load net {simulator::top,dut,result_next[5]} -attr @name {result_next[5]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 26 -pin simulator::top,dut,FlipFlop_0 26
+load net {simulator::top,dut,result_next[4]} -attr @name {result_next[4]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 27 -pin simulator::top,dut,FlipFlop_0 27
+load net {simulator::top,dut,result_next[3]} -attr @name {result_next[3]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 28 -pin simulator::top,dut,FlipFlop_0 28
+load net {simulator::top,dut,result_next[2]} -attr @name {result_next[2]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 29 -pin simulator::top,dut,FlipFlop_0 29
+load net {simulator::top,dut,result_next[1]} -attr @name {result_next[1]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 30 -pin simulator::top,dut,FlipFlop_0 30
+load net {simulator::top,dut,result_next[0]} -attr @name {result_next[0]} -attr @color #666666.1 -pin simulator::top,dut,Always_comb_0 31 -pin simulator::top,dut,FlipFlop_0 31
+load net simulator::top,dut,rst -attr @name rst -attr @color #666666.1 -hierPin simulator::top,dut 1 -pin simulator::top,dut,Always_comb_0 103 -pin simulator::top,dut,FlipFlop_0 33 -pin simulator::top,dut,FlipFlop_1 2
+netloc simulator::top,dut,rst 1 0 2 210 90 510
+load netBundle {simulator::top,dut,A[31:0]} g32 -attr @name {A[31:0]} -attr @color #666666.1
+netbloc {simulator::top,dut,A[31:0]} 1 0 1 190 120n
+load netBundle {simulator::top,dut,B[31:0]} g32 -attr @name {B[31:0]} -attr @color #666666.1
+netbloc {simulator::top,dut,B[31:0]} 1 0 1 150 140n
+load netBundle {simulator::top,dut,Opcode[2:0]} g3 -attr @name {Opcode[2:0]} -attr @color #666666.1
+netbloc {simulator::top,dut,Opcode[2:0]} 1 0 1 170J 200n
+load netBundle {simulator::top,dut,Result[31:0]} g32 -attr @name {Result[31:0]} -attr @color #666666.1
+netbloc {simulator::top,dut,Result[31:0]} 1 2 1 NJ 200
+load netBundle {simulator::top,dut,result_next[31:0]} g32 -attr @name {result_next[31:0]} -attr @color #666666.1
+netbloc {simulator::top,dut,result_next[31:0]} 1 0 2 230 70 530
+levelinfo -pg 1 -20 80 1020
+levelinfo -hier simulator::top,dut * 260 690 *
+pagesize -pg 1 -db -bbox -sgen -20 0 1020 310
+pagesize -hier simulator::top,dut -db -bbox -sgen 60 20 940 290
+show
+zoom 2.02057
+scrollpos 198 -8
+#
+# initialize ictrl to current module root {}
+ictrl init -bulk {} ,
+}
+
+#
+# Watch Window windows
+#
+if {[catch {window new WatchWindow -name "Watch Window 1" -geometry 500x500+0+0}] != ""} {
+    window geometry "Watch Window 1" 500x500+0+0
+}
+window target "Watch Window 1" on
+watchwindow using "Watch Window 1"
+watchwindow add -signals  {{simulator::top.dut.A[31:0]}} 
+watchwindow timecontrol set -lock 0
+watchwindow set  -showassertions 1 -showerrorsignals 1 -showfibers 1 -showinouts 1 -showinputs 1 -showinternals 1 -showlive 1 -showoutputs 1
+
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 600x250+0+0
+
+#
+# Layout selection
+#

@@ -1,3 +1,47 @@
+
+13:50:21:5021 [important] [features-3-thread-1] WARN  - InfoSource version is empty in getMajorMinorVersion()
+13:50:21:5021 [important] [features-3-thread-1] WARN  - InfoSource version not found!! skipping relevant version checks
+13:50:22:5022 [important] [features-3-thread-1] INFO  - xmsim gcc version is 12.4.0
+13:50:22:5022 [important] [features-3-thread-1] INFO  - indago gcc version is 12.4.0
+13:50:22:5022 [important] [TangoTaskManager-3] WARN  - An Indago Snapshot/LWD was not loaded. Scripting API functionality may be impacted.
+13:50:23:5023 [com.cadence.smartlog.bl.common.SLUtils] [TangoTaskManager-5] INFO  - query: 
+13:50:39:5039 [user_actions] [AWT-EventQueue-1] DEBUG - refreshSchematicAttributes (SchematicActionsManager$25)
+
+13:50:39:5039 [user_actions] [AWT-EventQueue-1] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+13:50:39:5039 [user_actions] [AWT-EventQueue-1] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+13:50:40:5040 [user_actions] [AWT-EventQueue-1] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+13:50:44:5044 [user_actions] [AWT-EventQueue-1] DEBUG - Keep current (GUFIQuestionDialog$1)
+	dialog = restoreLayoutsDialog (GUFIQuestionDialog)
+
+13:50:45:5045 [important] [TangoTaskManager-3] INFO  - ScriptingActivator while loop has finished
+13:50:48:5048 [user_actions] [AWT-EventQueue-1] DEBUG - refreshSchematicAttributes (SchematicActionsManager$25)
+
+13:50:51:5051 [user_actions] [AWT-EventQueue-1] DEBUG - run (GSLInteractiveRunPanel$3)
+
+13:50:51:5051 [user_actions] [AWT-EventQueue-1] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+13:50:51:5051 [user_actions] [AWT-EventQueue-1] DEBUG - LiveSimulationRefreshWaveform (GSLLiveSimulationRefreshWaveformAction)
+
+13:51:40:5140 [user_actions] [AWT-EventQueue-1] DEBUG - run (GSLInteractiveRunPanel$3)
+
+13:51:40:5140 [user_actions] [AWT-EventQueue-1] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+13:51:41:5141 [user_actions] [AWT-EventQueue-1] DEBUG - run (GSLInteractiveRunPanel$3)
+
+13:51:41:5141 [user_actions] [AWT-EventQueue-1] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+13:51:44:5144 [user_actions] [AWT-EventQueue-1] DEBUG - recordLogs (GSLRecordLogsAction)
+
+13:51:45:5145 [user_actions] [AWT-EventQueue-1] DEBUG - run (GSLInteractiveRunPanel$3)
+
+13:51:45:5145 [user_actions] [AWT-EventQueue-1] DEBUG - RUN_FORWARD (GSLDebugStepAction)
+
+13:51:49:5149 [user_actions] [AWT-EventQueue-1] DEBUG - OK (GUFIQuestionDialog$1)
+	dialog = confirmExitDlg (GUFIQuestionDialog)
+
 20:46:24:4624 [important] [features-3-thread-1] WARN  - InfoSource version is empty in getMajorMinorVersion()
 20:46:24:4624 [important] [features-3-thread-1] WARN  - InfoSource version not found!! skipping relevant version checks
 20:46:24:4624 [important] [features-3-thread-1] INFO  - xmsim gcc version is 12.4.0
@@ -42,4 +86,5 @@
 20:47:44:4744 [user_actions] [AWT-EventQueue-1] DEBUG - showInstTypeDeclaration (GSLShowInstTypeDeclaration)
 	source = designTopsTreeTable
 	entity = top
+
 
