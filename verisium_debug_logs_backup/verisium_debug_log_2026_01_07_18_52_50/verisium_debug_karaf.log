@@ -1,2 +1,0 @@
-2026-01-07T20:46:14,213 | ERROR | activator-1-thread-1 | Activator                        | 47 - org.apache.karaf.management.server - 4.4.3 | Can't init JMXConnectorServer: Cannot give port number without host name
-2026-01-07T20:46:14,229 | INFO  | activator-1-thread-1 | DefaultIoServiceFactoryFactory   | 56 - org.apache.sshd.osgi - 2.9.2 | No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
