@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-sv
+-uvm
++incdir+.
+design.sv
+testbench.sv
++UVM_TESTNAME=alu_random_test

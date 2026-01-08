@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(08Jan2026:14:07:51):( xrun -sv -uvm +incdir+. design.sv testbench.sv +UVM_TESTNAME=alu_random_test )&&(./xcelium.d/env.d/env.history.08Jan2026_14_07_51)

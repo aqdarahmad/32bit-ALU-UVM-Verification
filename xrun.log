@@ -1,18 +1,97 @@
 xrun(64): 25.03-s006: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
 
+TOOL:	xrun(64)	25.03-s006: Started on Jan 08, 2026 at 14:07:51 EET
+
+
 TOOL:	xrun(64)	25.03-s006: Started on Jan 08, 2026 at 13:51:34 EET
 
 TOOL:	xrun(64)	25.03-s006: Started on Jan 07, 2026 at 20:46:04 EET
 
+
 xrun
 	-sv
 	-uvm
-	-access +rw
 	+incdir+.
 	design.sv
 	testbench.sv
 
 	+UVM_TESTNAME=alu_random_test
+
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d
+file: design.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: testbench.sv
+	interface worklib.alu_interface:sv
+		errors: 0, warnings: 0
+      A == -2147483648;      // Min negative signed 32-bit
+                     |
+xmvlog: *W,SGNOVF (alu_underflow_sequence.sv,32|21): sign overflow during conversion from text [2.5(IEEE)] (32 bits).
+	module worklib.top:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		$unit_0x67f934e9
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.alu:sv <0x70d31aa9>
+			streams:   4, words:  2185
+		worklib.alu_interface:sv <0x70052468>
+			streams: 789, words: 951754
+		worklib.cdns_uvm_pkg:sv <0x20f8fb99>
+			streams: 172, words: 242151
+		worklib.cdns_uvmapi:svp <0x1e3caedd>
+			streams:  27, words: 28330
+		worklib.cdns_assert2uvm_pkg:sv <0x4c3ea9e4>
+			streams:   3, words:  1590
+		worklib.uvm_pkg:sv <0x7d9f53df>
+			streams: 4535, words: 6730309
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                        Instances  Unique
+		Modules:                        2       2
+		Interfaces:                     1       1
+		Verilog packages:               4       4
+		Registers:                 14,272  10,385
+		Scalar wires:                   6       -
+		Vectored wires:                 5       -
+		Named events:                   4      12
+		Always blocks:                  2       2
+		Initial blocks:               315     167
+		Clocking blocks:                2       2
+		Clocking items:                 3       8
+		Parallel blocks:               26      27
+		Pseudo assignments:             7       -
+		Assertions:                    11      11
+		Covergroup Instances:           0       1
+		Compilation units:              1       1
+		SV Class declarations:        209     322
+		SV Class specializations:     403     403
+		Process Clocks:                 1       1
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xcelium> source /usr/cadence/installs/XCELIUM2503/tools/xcelium/files/xmsimrc
+xcelium> source /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (25.03-s006)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+=======
 
 
 	-debug_opts verisium_interactive
@@ -119,6 +198,7 @@ CDNS-UVM-1.1d (25.03-s006)
 (C) 2011-2013 Cypress Semiconductor Corp.
 ----------------------------------------------------------------
 
+
   ***********       IMPORTANT RELEASE NOTES         ************
 
   You are using a version of the UVM library that has been compiled
@@ -131,14 +211,75 @@ CDNS-UVM-1.1d (25.03-s006)
 
       (Specify +UVM_NO_RELNOTES to turn off this notice)
 
-UVM_INFO /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/additions/sv/cdns_tcl.svh(885) @ 0: reporter [CDNS_EXT] STOP_ON_ERROR
-UVM_WARNING @ 0: reporter [CBUNREG] Callback cdns_catcher cannot be registered with object (*) because callback type  is not registered with object type uvm_object
-xcelium> 
-xcelium> 
-xcelium> ida_probe -log=on
-xcelium> ida_probe -log=off
-xcelium> ida_probe -log=on
-xcelium> ida_probe -log=off
-xcelium> ida_probe -log=on
-xcelium> 
 
+
+
+===================================================================
++       UVM ALU Verification Environment v1.0 - COMPLETE       +
+===================================================================
++  ALL LABS COMPLETE (1-9)                                     +
++                                                               +
++  TRUE Sequence Item & Sequencer         (Lab 1)                +
++  TRUE Interface with Clocking Blocks    (Lab 2)                +
++  TRUE Driver & Monitor                  (Lab 3)                +
++  TRUE Agent                             (Lab 4)                +
++  TRUE Sequences (9 types)               (Lab 5)                +
++  TRUE Scoreboard with Reference Model   (Lab 6)                +
++  TRUE Subscriber for Coverage           (Lab 6.5)              +
++  TRUE Environment                       (Lab 7)                +
++  TRUE Test Classes                      (Lab 8)                +
++  TRUE DUT (ALU Design)                  (Lab 9)                +
+============================================================
++  DUT: 32-bit ALU                                             +
++  Operations: ADD, SUB, AND, OR, XOR                          +
++  Features: Overflow/Underflow Detection                      +
++  Clock: 100MHz (10ns period)                                 +
++  Reset: Active high, 20ns duration                           +
+============================================================
++  Available Tests:                                            +
++  1. alu_random_test      - 500 random transactions           +
++  2. alu_regression_test  - Comprehensive (all sequences)     +
+============================================================
++  To select test: +UVM_TESTNAME=<test_name>                   +
+============================================================
+
+
+UVM_INFO @ 0: reporter [RNTST] Running test alu_random_test...
+xmsim: *W,DVEXACC: some objects excluded from $dumpvars due to access restrictions, use +access+r on command line for access to all objects.
+            File: ./testbench.sv, line = 133, pos = 12
+           Scope: top
+            Time: 0 FS + 0
+
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO : 2541
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[ACTUAL]   504
+[EXPECTED]   504
+[PASS]   504
+[RNTST]     1
+[TEST_DONE]     1
+[alu_environment]     9
+[alu_random_sequence]  1000
+[alu_random_test]    10
+[alu_scoreboard]     7
+[alu_subscriber]     1
+Simulation complete via $finish(1) at time 10100 NS + 45
+/usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+TOOL:	xrun(64)	25.03-s006: Exiting on Jan 08, 2026 at 14:07:56 EET  (total: 00:00:05)
