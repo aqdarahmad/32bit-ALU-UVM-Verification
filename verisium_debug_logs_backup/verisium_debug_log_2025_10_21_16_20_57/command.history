@@ -1,4 +1,0 @@
-Connected to dc:orionvtech.orionvtech.com:53667
-xmsim ida_probe -log=on
-xmsim ida_probe -wave -wave_probe_args {alu_testbench.dut.A alu_testbench.dut.B alu_testbench.dut.Error alu_testbench.dut.Opcode alu_testbench.dut.Result alu_testbench.dut.clk alu_testbench.dut.rst}
-xmsim run
