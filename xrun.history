@@ -1,7 +1,8 @@
-<<<<<<< HEAD
+
+
 #e1(08Jan2026:14:07:51): source ./xcelium.d/env.d/env.history.08Jan2026_14_07_51
 s1(08Jan2026:14:07:51):  xrun -sv -uvm +incdir+. design.sv testbench.sv +UVM_TESTNAME=alu_random_test 
-=======
+
 
 #e1(07Jan2026:21:42:55): source ./xcelium.d/env.d/env.history.07Jan2026_21_42_55
 s1(07Jan2026:21:42:55):  xrun -gui -access +rwc -timescale 1ns/1ps -coverage all -covoverwrite design.sv 
@@ -91,4 +92,4 @@ s32(07Jan2026:20:43:28):  xrun -sv -uvm design.sv testbench.sv -opts verisuim_in
 #e33(07Jan2026:20:46:05): source ./xcelium.d/env.d/env.history.07Jan2026_20_46_05
 s33(07Jan2026:20:46:05):  xrun -sv -uvm design.sv testbench.sv -debug_opts verisium_interactive 
 
->>>>>>> 31cfffcecf6bd8d1f67bc03093a01ccce00d9193
+
