@@ -50,8 +50,8 @@ mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor or
 #
 # Design Browser windows
 #
-if {[catch {window new WatchList -name "Design Browser 1" -geometry 1536x793+0+23}] != ""} {
-    window geometry "Design Browser 1" 1536x793+0+23
+if {[catch {window new WatchList -name "Design Browser 1" -geometry 1536x793+0+0}] != ""} {
+    window geometry "Design Browser 1" 1536x793+0+0
 }
 window target "Design Browser 1" on
 browser using {Design Browser 1}
@@ -64,8 +64,8 @@ browser timecontrol set -lock 0
 #
 # Schematic Tracer windows
 #
-if {[catch {window new SchematicWindow -name "Schematic Tracer 2" -geometry 900x600+138+161}] != ""} {
-    window geometry "Schematic Tracer 2" 900x600+138+161
+if {[catch {window new SchematicWindow -name "Schematic Tracer 2" -geometry 900x600+0+0}] != ""} {
+    window geometry "Schematic Tracer 2" 900x600+0+0
 }
 window target "Schematic Tracer 2" on
 schematic using "Schematic Tracer 2"
@@ -291,7 +291,7 @@ ictrl init -bulk {} ,
 # Console windows
 #
 console set -windowname Console
-window geometry Console 730x250+261+564
+window geometry Console 730x250+0+0
 
 #
 # Layout selection

@@ -45,3 +45,15 @@ xcelium> source /usr/cadence/installs/XCELIUM2503/tools/xcelium/files/xmsimrc
 xcelium> run
 xmsim: *W,RNQUIE: Simulation is complete.
 xcelium> 
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  alu(alu)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_4f6fc31e_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_4f6fc31e_00000000.ucd
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	25.03-s006: Exiting on Jan 07, 2026 at 22:39:44 EET  (total: 00:56:49)
