@@ -1,4 +1,8 @@
+
 karaf: PID is: 2931813 (this is karaf's PID. for verisium debug PID cat verisium_debug.pid in the logs directory)
+
+karaf: PID is: 3937682 (this is karaf's PID. for verisium debug PID cat verisium_debug.pid in the logs directory)
+
 Picked up _JAVA_OPTIONS:  -XX:+ExitOnOutOfMemoryError -XX:OnOutOfMemoryError="touch /home/Trainee23/project/verisium_debug_logs/out_of_memory_error" 
 CompileCommand: exclude javax/swing/text/GlyphView.getBreakSpot
 WARNING: package com.sun.java.swing.plaf.windows not in java.desktop
@@ -69,11 +73,19 @@ GOT COMMAND:
 
 
 
+
 Scripting Service started, listening on port 44809...
 
 
 WARNING: An illegal reflective access operation has occurred
 WARNING: Illegal reflective access by com.cadence.ufi.gui.views.ui.InnerContentTabbedPaneUI (jar:bundle://2ddc0c38-d00e-4287-9bd6-2c6563fee446_77.0:0/!/) to field javax.swing.plaf.basic.BasicTabbedPaneUI.tabScroller
+
+Scripting Service started, listening on port 39587...
+
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.cadence.ufi.gui.views.ui.InnerContentTabbedPaneUI (jar:bundle://a482a370-8250-4e85-8b94-f512b0baa4bc_77.0:0/!/) to field javax.swing.plaf.basic.BasicTabbedPaneUI.tabScroller
+
 WARNING: Please consider reporting this to the maintainers of com.cadence.ufi.gui.views.ui.InnerContentTabbedPaneUI
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release

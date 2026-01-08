@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $date
     Jan  8, 2026  14:07:55
 $end
@@ -11,3 +12,5 @@ $enddefinitions $end
 $dumpvars
 $end
 #10100
+=======
+>>>>>>> 31cfffcecf6bd8d1f67bc03093a01ccce00d9193

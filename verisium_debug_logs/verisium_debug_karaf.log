@@ -1,3 +1,4 @@
+
 2026-01-08T13:50:13,742 | ERROR | activator-1-thread-1 | Activator                        | 47 - org.apache.karaf.management.server - 4.4.3 | Can't init JMXConnectorServer: Cannot give port number without host name
 2026-01-08T13:50:13,754 | WARN  | activator-1-thread-1 | Activator                        | 47 - org.apache.karaf.management.server - 4.4.3 | java.rmi.server.hostname system property is already set to 0.0.0.0. Apache Karaf doesn't override it
 2026-01-08T13:50:13,754 | ERROR | activator-1-thread-1 | Activator                        | 47 - org.apache.karaf.management.server - 4.4.3 | Can't init JMXConnectorServer: Cannot give port number without host name
@@ -20,3 +21,7 @@ java.net.BindException: Address already in use
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
 	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+
+2026-01-07T20:46:14,213 | ERROR | activator-1-thread-1 | Activator                        | 47 - org.apache.karaf.management.server - 4.4.3 | Can't init JMXConnectorServer: Cannot give port number without host name
+2026-01-07T20:46:14,229 | INFO  | activator-1-thread-1 | DefaultIoServiceFactoryFactory   | 56 - org.apache.sshd.osgi - 2.9.2 | No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+
